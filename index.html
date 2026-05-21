@@ -64,21 +64,33 @@
     overflow: hidden;
     padding-top: 64px;
   }
+  .hero-bg-photo {
+    position: absolute; inset: 0; z-index: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    opacity: 0.22;
+  }
   .hero::before {
     content: '';
-    position: absolute; inset: 0;
+    position: absolute; inset: 0; z-index: 1;
     background: 
+      linear-gradient(to bottom, rgba(10,22,40,0.5) 0%, rgba(10,22,40,0.75) 100%),
       radial-gradient(ellipse 80% 60% at 70% 50%, rgba(201,168,76,0.08) 0%, transparent 60%),
       radial-gradient(ellipse 40% 80% at 10% 50%, rgba(212,98,42,0.05) 0%, transparent 50%);
   }
+  .hero-credit {
+    position: absolute; bottom: 1rem; right: 1.5rem; z-index: 5;
+    font-size: 0.62rem; color: rgba(255,255,255,0.25);
+  }
   .hero-grid {
-    position: absolute; inset: 0; opacity: 0.03;
+    position: absolute; inset: 0; opacity: 0.03; z-index: 2;
     background-image: linear-gradient(rgba(201,168,76,1) 1px, transparent 1px),
       linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px);
     background-size: 60px 60px;
   }
   .hero-content {
-    position: relative; z-index: 2;
+    position: relative; z-index: 3;
     max-width: 900px; margin: 0 auto;
     padding: 4rem 2rem;
     text-align: center;
@@ -432,7 +444,9 @@
 
 <!-- HERO -->
 <section class="hero">
+  <img src="hero-bg.jpg" alt="Dubai Skyline" class="hero-bg-photo">
   <div class="hero-grid"></div>
+  <span class="hero-credit">Photo: Unsplash</span>
   <div class="hero-content">
     <div class="hero-badge">🇦🇪 UAE · MALAYALI EXPATS · SINCE 2024</div>
     <h1>Gulf<span class="gold">Niyamam</span></h1>

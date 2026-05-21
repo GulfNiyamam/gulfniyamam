@@ -34,8 +34,40 @@
 
   .article-hero {
     background: var(--navy);
-    padding: 4rem 2rem 3rem;
+    padding: 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover-photo {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 0.45;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 0;
+  }
+  .hero-content-wrap {
+    position: relative;
+    z-index: 2;
+    padding: 4rem 2rem 3rem;
+    background: linear-gradient(to bottom, rgba(10,22,40,0.3) 0%, rgba(10,22,40,0.85) 60%, rgba(10,22,40,1) 100%);
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .cover-credit {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+    font-size: 0.62rem;
+    color: rgba(255,255,255,0.3);
+    z-index: 3;
   }
   .article-category {
     display: inline-block; background: var(--gold); color: var(--deep);
@@ -175,13 +207,17 @@
 
 <!-- HERO -->
 <div class="article-hero">
-  <div class="article-category">LABOUR LAW · തൊഴിൽ നിയമം</div>
-  <h1>UAE-ൽ Job പോയാൽ Gratuity കിട്ടുമോ? — Complete Guide 2024</h1>
-  <div class="article-meta">
-    <span>📅 April 2026</span>
-    <span>⏱️ 8 min വായന</span>
-    <span>✍️ GulfNiyamam Team</span>
+  <img src="cover-gratuity.jpg" alt="UAE Office — GulfNiyamam" class="cover-photo">
+  <div class="hero-content-wrap">
+    <div class="article-category">LABOUR LAW · തൊഴിൽ നിയമം</div>
+    <h1>UAE-ൽ Job പോയാൽ Gratuity കിട്ടുമോ? — Complete Guide 2024</h1>
+    <div class="article-meta">
+      <span>📅 April 2026</span>
+      <span>⏱️ 8 min വായന</span>
+      <span>✍️ GulfNiyamam Team</span>
+    </div>
   </div>
+  <span class="cover-credit">Photo: Unsplash</span>
 </div>
 
 <!-- AD TOP -->

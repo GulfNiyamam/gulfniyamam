@@ -538,7 +538,9 @@
   <div class="section-label">LATEST · പുതിയ ലേഖനങ്ങൾ</div>
   <h2 class="section-title">ഇന്നത്തെ വായന</h2>
   <p class="section-sub">UAE Malayaliകൾ ഏറ്റവും കൂടുതൽ തിരയുന്ന വിഷയങ്ങൾ</p>
-  <div class="articles-grid">
+
+  <!-- FEATURED TOP -->
+  <div class="articles-grid" style="margin-bottom:1.5rem;">
     <a href="uae-gratuity-malayalam.html" class="article-featured" style="text-decoration:none; display:block;">
       <span class="article-tag">LABOUR LAW</span>
       <h3>UAE-ൽ Job പോയാൽ Gratuity കിട്ടുമോ? — Complete Guide 2026</h3>
@@ -557,24 +559,203 @@
         <span class="article-tag" style="font-size:0.6rem;">INSURANCE</span>
         <h4>Dubai Health Insurance 2026 — ഏത് Plan നല്ലത്?</h4>
         <p>Daman, Bupa, Cigna, Allianz — complete comparison in Malayalam...</p>
-        <div style="margin-top:0.75rem;">
-          <span style="color:var(--gold); font-size:0.78rem; font-weight:600;">വായിക്കുക →</span>
-        </div>
+        <div style="margin-top:0.75rem;"><span style="color:var(--gold); font-size:0.78rem; font-weight:600;">വായിക്കുക →</span></div>
       </a>
       <a href="uae-golden-visa-malayalam.html" class="article-small" style="text-decoration:none; color:inherit; display:block;">
-        <span class="article-tag" style="font-size:0.6rem; background: #6A1B9A;">VISA</span>
+        <span class="article-tag" style="font-size:0.6rem; background:#6A1B9A;">VISA</span>
         <h4>UAE Golden Visa 2026 — ആർക്ക് കിട്ടും? എങ്ങനെ Apply ചെയ്യാം?</h4>
         <p>10 year residency, no sponsor, family sponsor — complete guide...</p>
-        <div style="margin-top:0.75rem;">
-          <span style="color:var(--gold); font-size:0.78rem; font-weight:600;">വായിക്കുക →</span>
-        </div>
+        <div style="margin-top:0.75rem;"><span style="color:var(--gold); font-size:0.78rem; font-weight:600;">വായിക്കുക →</span></div>
       </a>
-      <div class="article-small">
-        <span class="article-tag" style="font-size:0.6rem; background: #2E7D32;">CAR</span>
-        <h4>Dubai-ൽ Car Accident ആയാൽ — ആദ്യം ചെയ്യേണ്ട 5 കാര്യങ്ങൾ</h4>
-        <p>Step by step guide for accident claims in UAE...</p>
-      </div>
+      <a href="uae-car-accident-malayalam.html" class="article-small" style="text-decoration:none; color:inherit; display:block;">
+        <span class="article-tag" style="font-size:0.6rem; background:#2E7D32;">CAR</span>
+        <h4>Dubai-ൽ Car Accident ആയാൽ — ആദ്യം ചെയ്യേണ്ട 7 കാര്യങ്ങൾ</h4>
+        <p>Police report, insurance claim, Blue/Yellow slip — step by step guide...</p>
+        <div style="margin-top:0.75rem;"><span style="color:var(--gold); font-size:0.78rem; font-weight:600;">വായിക്കുക →</span></div>
+      </a>
     </div>
+  </div>
+
+  <!-- ALL ARTICLES GRID -->
+  <style>
+    .all-articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .art-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 1.5rem;
+      text-decoration: none;
+      display: block;
+      transition: all 0.3s;
+    }
+    .art-card:hover { background: rgba(255,255,255,0.09); transform: translateY(-2px); }
+    .art-card .art-tag {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--deep);
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 0.75rem;
+    }
+    .art-card h4 {
+      font-family: 'Noto Serif Malayalam', serif;
+      font-size: 0.95rem;
+      color: #fff;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+    .art-card p { font-size: 0.78rem; color: rgba(255,255,255,0.4); line-height: 1.6; margin-bottom: 0.75rem; }
+    .art-card .art-meta { font-size: 0.7rem; color: rgba(255,255,255,0.25); }
+    .art-card .art-read { color: var(--gold); font-size: 0.78rem; font-weight: 600; margin-top: 0.75rem; display: block; }
+    .tag-labour { background: #1565C0; }
+    .tag-visa { background: #6A1B9A; }
+    .tag-car { background: #2E7D32; }
+    .tag-tenant { background: #C62828; }
+    .tag-travel { background: #E65100; }
+    .tag-finance { background: #00695C; }
+    .tag-traffic { background: #4A148C; }
+    .tag-edu { background: #1B5E20; }
+    .tag-employ { background: #B71C1C; }
+    .tag-insurance { background: #0D47A1; }
+  </style>
+
+  <div class="all-articles-grid">
+
+    <a href="uae-overtime-pay-malayalam.html" class="art-card">
+      <span class="art-tag tag-labour">LABOUR LAW</span>
+      <h4>UAE-ൽ Overtime Pay കിട്ടുന്നില്ലേ? — നിന്റെ Legal Rights 2026</h4>
+      <p>Overtime calculation, 25% & 50% rates, MoHRE complaint process.</p>
+      <div class="art-meta">⏱️ 7 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-salary-not-paid-malayalam.html" class="art-card">
+      <span class="art-tag tag-labour">LABOUR LAW</span>
+      <h4>UAE-ൽ Salary കൊടുത്തില്ലെങ്കിൽ — ഉടൻ ചെയ്യേണ്ട 5 Steps</h4>
+      <p>WPS system, 14-day rule, MoHRE complaint — salary delay rights.</p>
+      <div class="art-meta">⏱️ 6 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-labour-complaint-malayalam.html" class="art-card">
+      <span class="art-tag tag-labour">LABOUR LAW</span>
+      <h4>MoHRE-ൽ Labour Complaint എങ്ങനെ File ചെയ്യാം? — Step by Step 2026</h4>
+      <p>Free complaint filing, app process, documents, mediation — complete guide.</p>
+      <div class="art-meta">⏱️ 6 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-domestic-worker-rights-malayalam.html" class="art-card">
+      <span class="art-tag tag-labour">LABOUR LAW</span>
+      <h4>UAE-ൽ Housemaid/Domestic Worker Rights — Complete Guide 2026</h4>
+      <p>10 hours limit, annual leave, gratuity, abuse helplines — domestic worker law.</p>
+      <div class="art-meta">⏱️ 7 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-pregnancy-maternity-rights-malayalam.html" class="art-card">
+      <span class="art-tag tag-labour">LABOUR LAW</span>
+      <h4>UAE-ൽ Pregnancy & Maternity Rights — Working Mothers-ന്റെ Guide 2026</h4>
+      <p>60-day maternity leave, paternity leave, job protection — complete rights.</p>
+      <div class="art-meta">⏱️ 6 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-visa-cancel-rights-malayalam.html" class="art-card">
+      <span class="art-tag tag-visa">VISA</span>
+      <h4>UAE Visa Cancel ആയാൽ — Grace Period, Rights & Next Steps 2026</h4>
+      <p>60-day grace period, visit visa convert, exit ban check — full guide.</p>
+      <div class="art-meta">⏱️ 7 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-freelance-visa-malayalam.html" class="art-card">
+      <span class="art-tag tag-visa">VISA</span>
+      <h4>UAE Freelance Visa 2026 — Self Employed ആകാൻ Complete Guide</h4>
+      <p>Free zones, cost comparison, documents, process — freelance permit guide.</p>
+      <div class="art-meta">⏱️ 7 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-car-insurance-guide-malayalam.html" class="art-card">
+      <span class="art-tag tag-car">CAR INSURANCE</span>
+      <h4>UAE Car Insurance 2026 — Best Plans, Types & How to Claim</h4>
+      <p>Comprehensive vs third party, top providers, claim process in Malayalam.</p>
+      <div class="art-meta">⏱️ 7 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-traffic-fines-malayalam.html" class="art-card">
+      <span class="art-tag tag-traffic">TRAFFIC LAW</span>
+      <h4>UAE Traffic Fines 2026 — ഏത് Violation-ന് എത്ര Fine? Complete List</h4>
+      <p>Speeding, red light, mobile phone, drunk driving — complete fines list.</p>
+      <div class="art-meta">⏱️ 6 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-rent-rights-malayalam.html" class="art-card">
+      <span class="art-tag tag-tenant">TENANT LAW</span>
+      <h4>UAE-ൽ Landlord Rent കൂട്ടിയോ? — Tenant Rights Complete Guide 2026</h4>
+      <p>RERA rent calculator, eviction rules, RDC complaint — rental law guide.</p>
+      <div class="art-meta">⏱️ 8 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-travel-insurance-malayalam.html" class="art-card">
+      <span class="art-tag tag-travel">TRAVEL INSURANCE</span>
+      <h4>UAE Travel Insurance 2026 — India Trip-ന് വേണ്ടി ഇത് അറിഞ്ഞിരിക്കൂ</h4>
+      <p>India trip cover, Schengen requirements, best providers 2026.</p>
+      <div class="art-meta">⏱️ 6 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-bank-loan-rights-malayalam.html" class="art-card">
+      <span class="art-tag tag-finance">FINANCIAL RIGHTS</span>
+      <h4>UAE Bank Loan Repay ചെയ്യാൻ കഴിയുന്നില്ലേ? — Legal Options 2026</h4>
+      <p>Loan restructuring, Central Bank complaint, debt management options.</p>
+      <div class="art-meta">⏱️ 7 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-bank-account-malayalam.html" class="art-card">
+      <span class="art-tag tag-finance">FINANCIAL RIGHTS</span>
+      <h4>UAE-ൽ Bank Account Open ചെയ്യൂ — Best Banks & Process 2026</h4>
+      <p>Emirates NBD, ADCB, Mashreq Neo — best banks for Malayali expats.</p>
+      <div class="art-meta">⏱️ 6 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-emiratisation-impact-malayalam.html" class="art-card">
+      <span class="art-tag tag-employ">EMPLOYMENT</span>
+      <h4>UAE Emiratisation 2026 — Malayali Expats-ന് Impact എന്ത്?</h4>
+      <p>Safe sectors, challenging sectors, expat strategy — facts-based analysis.</p>
+      <div class="art-meta">⏱️ 7 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-life-insurance-malayalam.html" class="art-card">
+      <span class="art-tag tag-insurance">INSURANCE</span>
+      <h4>UAE Life Insurance 2026 — Family-ന്റെ Future Protect ചെയ്യൂ</h4>
+      <p>Term insurance, Zurich, Metlife, LIC NRI — best life cover for expats.</p>
+      <div class="art-meta">⏱️ 6 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
+    <a href="uae-child-education-rights-malayalam.html" class="art-card">
+      <span class="art-tag tag-edu">EDUCATION</span>
+      <h4>UAE-ൽ Children School Admission — Expat Parents-ന്റെ Complete Guide 2026</h4>
+      <p>CBSE schools, fees comparison, KHDA, admission process — parent guide.</p>
+      <div class="art-meta">⏱️ 7 min · May 2026</div>
+      <span class="art-read">വായിക്കുക →</span>
+    </a>
+
   </div>
 </section>
 

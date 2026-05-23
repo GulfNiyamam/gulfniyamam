@@ -457,7 +457,7 @@
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-num">50+</div>
+        <div class="stat-num">20</div>
         <div class="stat-label">ലേഖനങ്ങൾ</div>
       </div>
       <div class="stat">
@@ -494,43 +494,175 @@
   <h2 class="section-title">എന്ത് വിഷയം തിരയുന്നു?</h2>
   <p class="section-sub">UAE-ൽ ജീവിക്കുന്ന മലയാളികൾക്ക് ആവശ്യമായ എല്ലാ information-ഉം</p>
   <div class="cat-grid">
-    <a href="#" class="cat-card">
-      <span class="cat-count">12 ലേഖനങ്ങൾ</span>
+
+    <!-- Health Insurance — 3 articles -->
+    <a href="#health" class="cat-card" onclick="toggleCategory('health'); return false;">
+      <span class="cat-count">3 ലേഖനങ്ങൾ</span>
       <div class="cat-icon">🏥</div>
       <div class="cat-title">Health Insurance</div>
-      <p class="cat-desc">UAE-ൽ best health insurance ഏതാണ്? Claim ചെയ്യാൻ എന്ത് ചെയ്യണം? Visa-ക്ക് ആവശ്യമായ insurance details.</p>
+      <p class="cat-desc">UAE-ൽ best health insurance ഏതാണ്? Claim ചെയ്യാൻ എന്ത് ചെയ്യണം? Life insurance, travel insurance.</p>
     </a>
-    <a href="#" class="cat-card">
-      <span class="cat-count">18 ലേഖനങ്ങൾ</span>
+
+    <!-- Labour Law — 6 articles -->
+    <a href="#labour" class="cat-card" onclick="toggleCategory('labour'); return false;">
+      <span class="cat-count">6 ലേഖനങ്ങൾ</span>
       <div class="cat-icon">⚖️</div>
       <div class="cat-title">Labour Law</div>
-      <p class="cat-desc">Overtime pay, End of service gratuity, Job termination rights — UAE labour law in Malayalam.</p>
+      <p class="cat-desc">Overtime pay, Gratuity, Salary not paid, Maternity rights, Domestic worker rights — UAE labour law.</p>
     </a>
-    <a href="#" class="cat-card">
-      <span class="cat-count">9 ലേഖനങ്ങൾ</span>
+
+    <!-- Car Insurance — 2 articles -->
+    <a href="#car" class="cat-card" onclick="toggleCategory('car'); return false;">
+      <span class="cat-count">2 ലേഖനങ്ങൾ</span>
       <div class="cat-icon">🚗</div>
       <div class="cat-title">Car Insurance</div>
-      <p class="cat-desc">UAE-ൽ car insurance compulsory ആണ്. Best plans, claim process, traffic accident procedures.</p>
+      <p class="cat-desc">UAE car insurance plans, accident procedure, claim process — complete guide.</p>
     </a>
-    <a href="#" class="cat-card">
-      <span class="cat-count">14 ലേഖനങ്ങൾ</span>
+
+    <!-- Tenant Rights — 1 article -->
+    <a href="#tenant" class="cat-card" onclick="toggleCategory('tenant'); return false;">
+      <span class="cat-count">1 ലേഖനം</span>
       <div class="cat-icon">🏠</div>
       <div class="cat-title">Tenant Rights</div>
-      <p class="cat-desc">Rent increase limits, Eviction rules, Tenancy contract rights — UAE rental law explained.</p>
+      <p class="cat-desc">Rent increase limits, Eviction rules, RERA complaint — UAE rental law explained.</p>
     </a>
-    <a href="#" class="cat-card">
-      <span class="cat-count">7 ലേഖനങ്ങൾ</span>
+
+    <!-- Visa & Travel — 3 articles -->
+    <a href="#visa" class="cat-card" onclick="toggleCategory('visa'); return false;">
+      <span class="cat-count">3 ലേഖനങ്ങൾ</span>
       <div class="cat-icon">✈️</div>
       <div class="cat-title">Visa & Travel Insurance</div>
-      <p class="cat-desc">Travel insurance requirements, Visa cancellation rights, Return ticket rules for expats.</p>
+      <p class="cat-desc">Golden Visa, Visa cancel rights, Freelance visa, Travel insurance — complete guides.</p>
     </a>
-    <a href="#" class="cat-card">
-      <span class="cat-count">11 ലേഖനങ്ങൾ</span>
+
+    <!-- Financial Rights — 3 articles -->
+    <a href="#finance" class="cat-card" onclick="toggleCategory('finance'); return false;">
+      <span class="cat-count">3 ലേഖനങ്ങൾ</span>
       <div class="cat-icon">💰</div>
       <div class="cat-title">Financial Rights</div>
-      <p class="cat-desc">Bank fraud complaints, Salary protection, Loan rights, UAE financial regulations.</p>
+      <p class="cat-desc">Bank loan rights, Best banks UAE, Emiratisation impact — financial guide.</p>
     </a>
+
+    <!-- Traffic — 1 article -->
+    <a href="#traffic" class="cat-card" onclick="toggleCategory('traffic'); return false;">
+      <span class="cat-count">1 ലേഖനം</span>
+      <div class="cat-icon">🚦</div>
+      <div class="cat-title">Traffic Law</div>
+      <p class="cat-desc">UAE traffic fines 2026 complete list — speeding, parking, mobile phone violations.</p>
+    </a>
+
+    <!-- Education — 1 article -->
+    <a href="#education" class="cat-card" onclick="toggleCategory('education'); return false;">
+      <span class="cat-count">1 ലേഖനം</span>
+      <div class="cat-icon">🎓</div>
+      <div class="cat-title">Education</div>
+      <p class="cat-desc">UAE school admission guide for expat parents — CBSE schools, fees, process.</p>
+    </a>
+
   </div>
+
+  <!-- CATEGORY ARTICLE DROPDOWNS -->
+  <div style="max-width:1100px; margin:2rem auto 0; padding:0 1rem;">
+
+    <div id="cat-health" class="cat-articles" style="display:none; margin-bottom:1rem;">
+      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
+        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">🏥 HEALTH INSURANCE — 3 ലേഖനങ്ങൾ</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
+          <a href="dubai-health-insurance-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">INSURANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">Dubai Health Insurance 2026 — ഏത് Plan നല്ലത്?</h4></a>
+          <a href="uae-life-insurance-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">INSURANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Life Insurance 2026 — Family Protect ചെയ്യൂ</h4></a>
+          <a href="uae-travel-insurance-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">TRAVEL</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Travel Insurance — India Trip Guide 2026</h4></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cat-labour" class="cat-articles" style="display:none; margin-bottom:1rem;">
+      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
+        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">⚖️ LABOUR LAW — 6 ലേഖനങ്ങൾ</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
+          <a href="uae-gratuity-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE-ൽ Job പോയാൽ Gratuity കിട്ടുമോ?</h4></a>
+          <a href="uae-overtime-pay-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Overtime Pay കിട്ടുന്നില്ലേ? Legal Rights</h4></a>
+          <a href="uae-salary-not-paid-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Salary കൊടുത്തില്ലെങ്കിൽ — 5 Steps</h4></a>
+          <a href="uae-labour-complaint-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">MoHRE Complaint File ചെയ്യൂ — Step by Step</h4></a>
+          <a href="uae-domestic-worker-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Housemaid / Domestic Worker Rights 2026</h4></a>
+          <a href="uae-pregnancy-maternity-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Maternity Rights 2026 — Working Mothers</h4></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cat-car" class="cat-articles" style="display:none; margin-bottom:1rem;">
+      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
+        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">🚗 CAR INSURANCE — 2 ലേഖനങ്ങൾ</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
+          <a href="uae-car-accident-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">CAR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">Dubai Car Accident ആയാൽ — 7 Steps</h4></a>
+          <a href="uae-car-insurance-guide-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">CAR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Car Insurance 2026 — Best Plans & Claim</h4></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cat-tenant" class="cat-articles" style="display:none; margin-bottom:1rem;">
+      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
+        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">🏠 TENANT RIGHTS — 1 ലേഖനം</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
+          <a href="uae-rent-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">TENANT</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">Landlord Rent കൂട്ടിയോ? UAE Tenant Rights 2026</h4></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cat-visa" class="cat-articles" style="display:none; margin-bottom:1rem;">
+      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
+        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">✈️ VISA & TRAVEL — 3 ലേഖനങ്ങൾ</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
+          <a href="uae-golden-visa-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">VISA</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Golden Visa 2026 — ആർക്ക് കിട്ടും?</h4></a>
+          <a href="uae-visa-cancel-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">VISA</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Visa Cancel ആയാൽ — Grace Period & Rights</h4></a>
+          <a href="uae-freelance-visa-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">VISA</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Freelance Visa 2026 — Self Employed Guide</h4></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cat-finance" class="cat-articles" style="display:none; margin-bottom:1rem;">
+      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
+        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">💰 FINANCIAL RIGHTS — 3 ലേഖനങ്ങൾ</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
+          <a href="uae-bank-loan-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">FINANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Bank Loan Repay ചെയ്യാൻ കഴിയുന്നില്ലേ?</h4></a>
+          <a href="uae-bank-account-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">FINANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Best Banks 2026 — Account Open Guide</h4></a>
+          <a href="uae-emiratisation-impact-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">EMPLOYMENT</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Emiratisation 2026 — Expats-ന് Impact?</h4></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cat-traffic" class="cat-articles" style="display:none; margin-bottom:1rem;">
+      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
+        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">🚦 TRAFFIC LAW — 1 ലേഖനം</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
+          <a href="uae-traffic-fines-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">TRAFFIC</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Traffic Fines 2026 — Complete List</h4></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cat-education" class="cat-articles" style="display:none; margin-bottom:1rem;">
+      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
+        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">🎓 EDUCATION — 1 ലേഖനം</div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
+          <a href="uae-child-education-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">EDUCATION</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE School Admission — Expat Parents Guide</h4></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+  function toggleCategory(cat) {
+    var all = document.querySelectorAll('.cat-articles');
+    all.forEach(function(el){ 
+      if(el.id !== 'cat-'+cat) el.style.display='none'; 
+    });
+    var el = document.getElementById('cat-'+cat);
+    if(el) el.style.display = el.style.display==='none' ? 'block' : 'none';
+    if(el && el.style.display==='block') {
+      setTimeout(function(){ el.scrollIntoView({behavior:'smooth', block:'start'}); }, 100);
+    }
+  }
+  </script>
 </section>
 
 <!-- FEATURED ARTICLES -->

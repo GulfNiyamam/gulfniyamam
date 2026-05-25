@@ -293,10 +293,10 @@
   <div class="post-job-banner" style="text-align:left; padding:2.5rem;">
     <h3 style="text-align:center; margin-bottom:0.5rem;">നിന്റെ Company-ൽ Vacancy ഉണ്ടോ?</h3>
     <p style="text-align:center; margin-bottom:1.5rem;">GulfNiyamam-ൽ Free ആയി post ചെയ്യൂ — UAE Malayalis-ന് reach ചെയ്യൂ</p>
-    <form action="https://formsubmit.co/gulfniyamam@gmail.com" method="POST" style="display:grid; gap:0.85rem; max-width:600px; margin:0 auto;">
-      <input type="hidden" name="_subject" value="New Job Vacancy Submission — GulfNiyamam">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
+    <form id="jobPostForm" style="display:grid; gap:0.85rem; max-width:600px; margin:0 auto;">
+      <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+      <input type="hidden" name="subject" value="New Job Vacancy Submission — GulfNiyamam">
+      <input type="hidden" name="from_name" value="GulfNiyamam Jobs">
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.85rem;">
         <div>
           <label style="font-size:0.78rem; color:rgba(255,255,255,0.6); display:block; margin-bottom:0.3rem;">Company Name *</label>
@@ -325,11 +325,56 @@
         <label style="font-size:0.78rem; color:rgba(255,255,255,0.6); display:block; margin-bottom:0.3rem;">Requirements / Details</label>
         <textarea name="requirements" rows="3" placeholder="Experience, qualifications, other details..." style="width:100%; padding:0.65rem 0.9rem; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.2); color:#fff; font-size:0.85rem; font-family:'Noto Sans Malayalam',sans-serif; outline:none; resize:vertical;"></textarea>
       </div>
-      <button type="submit" style="background:var(--gold); color:var(--deep); border:none; padding:0.8rem 2rem; font-size:0.9rem; font-weight:700; cursor:pointer; font-family:'Noto Sans Malayalam',sans-serif; transition:all 0.2s; width:100%;">
+      <button type="button" onclick="submitJobForm()" style="background:var(--gold); color:var(--deep); border:none; padding:0.8rem 2rem; font-size:0.9rem; font-weight:700; cursor:pointer; font-family:'Noto Sans Malayalam',sans-serif; transition:all 0.2s; width:100%;" id="submitBtn">
         Free ആയി Submit ചെയ്യൂ →
       </button>
-      <p style="font-size:0.72rem; color:rgba(255,255,255,0.35); text-align:center;">Submit ചെയ്‌ത് 24 hours-ൽ website-ൽ add ആകും</p>
+      <p id="formMsg" style="font-size:0.78rem; color:rgba(255,255,255,0.35); text-align:center;">Submit ചെയ്‌ത് 24 hours-ൽ website-ൽ add ആകും</p>
     </form>
+
+    <script>
+    async function submitJobForm() {
+      const form = document.getElementById('jobPostForm');
+      const btn = document.getElementById('submitBtn');
+      const msg = document.getElementById('formMsg');
+
+      const company = form.querySelector('[name="company_name"]').value.trim();
+      const location = form.querySelector('[name="location"]').value.trim();
+      const positions = form.querySelector('[name="positions"]').value.trim();
+      const email = form.querySelector('[name="contact_email"]').value.trim();
+
+      if (!company || !location || !positions || !email) {
+        msg.style.color = '#ff6b6b';
+        msg.textContent = '⚠️ Required fields fill ചെയ്യൂ (Company, Location, Position, Email)';
+        return;
+      }
+
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      const salary = form.querySelector('[name="salary"]').value.trim();
+      const requirements = form.querySelector('[name="requirements"]').value.trim();
+
+      const body = `New Job Vacancy Submission
+
+Company: ${company}
+Location: ${location}
+Positions: ${positions}
+Salary: ${salary || 'Not specified'}
+Contact Email: ${email}
+Requirements: ${requirements || 'Not specified'}`;
+
+      const mailtoUrl = `https://mail.google.com/mail/?view=cm&to=gulfniyamam@gmail.com&su=${encodeURIComponent('New Job Vacancy — ' + company)}&body=${encodeURIComponent(body)}`;
+      window.open(mailtoUrl, '_blank');
+
+      msg.style.color = '#69f0ae';
+      msg.textContent = '✅ Gmail window open ആയി! Send ചെയ്‌ത് confirm ചെയ്യൂ.';
+      btn.textContent = 'Submitted ✓';
+      setTimeout(() => {
+        btn.textContent = 'Free ആയി Submit ചെയ്യൂ →';
+        btn.disabled = false;
+      }, 4000);
+    }
+    </script>
   </div>
 
   <div class="disclaimer">

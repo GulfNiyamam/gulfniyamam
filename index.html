@@ -13,15 +13,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;600;700&family=Noto+Sans+Malayalam:wght@300;400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <style>
   :root {
-    --gold: #C9A84C;
-    --gold-light: #E8C97A;
-    --deep: #0A1628;
-    --navy: #112240;
+    --gold: #B8960C;
+    --gold-light: #D4AF37;
+    --deep: #0D1B2A;
+    --navy: #1B2A3B;
     --slate: #1E3A5F;
-    --cream: #F5F0E8;
-    --text: #2C1810;
-    --muted: #7A6955;
-    --accent: #D4622A;
+    --cream: #F2ECD8;
+    --text: #1A0F00;
+    --muted: #6B5D4F;
+    --accent: #8B1A1A;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -33,17 +33,19 @@
     background: var(--cream);
     color: var(--text);
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
   }
 
   /* NAV */
   nav {
     position: fixed; top: 0; width: 100%; z-index: 100;
-    background: rgba(10,22,40,0.97);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(201,168,76,0.3);
-    padding: 0 2rem;
+    background: rgba(13,27,42,0.98);
+    backdrop-filter: blur(12px);
+    border-bottom: 2px solid var(--gold);
+    padding: 0 2.5rem;
     display: flex; align-items: center; justify-content: space-between;
     height: 64px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
   }
   .nav-logo {
     font-family: 'Playfair Display', serif;
@@ -71,15 +73,15 @@
     width: 100%; height: 100%;
     object-fit: cover;
     object-position: center 30%;
-    opacity: 0.45;
+    opacity: 0.3;
+    filter: sepia(20%);
   }
   .hero::before {
     content: '';
     position: absolute; inset: 0; z-index: 1;
     background: 
-      linear-gradient(to bottom, rgba(10,22,40,0.25) 0%, rgba(10,22,40,0.55) 100%),
-      radial-gradient(ellipse 80% 60% at 70% 50%, rgba(201,168,76,0.08) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 80% at 10% 50%, rgba(212,98,42,0.05) 0%, transparent 50%);
+      linear-gradient(to bottom, rgba(13,27,42,0.3) 0%, rgba(13,27,42,0.7) 100%),
+      radial-gradient(ellipse 70% 50% at 50% 50%, rgba(184,150,12,0.06) 0%, transparent 70%);
   }
   .hero-credit {
     position: absolute; bottom: 1rem; right: 1.5rem; z-index: 5;
@@ -99,14 +101,15 @@
   }
   .hero-badge {
     display: inline-block;
-    border: 1px solid rgba(201,168,76,0.5);
+    border: 1px solid var(--gold);
     color: var(--gold-light);
-    font-size: 0.72rem;
-    letter-spacing: 0.2em;
-    padding: 0.4rem 1.2rem;
-    border-radius: 2px;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    padding: 0.4rem 1.4rem;
     margin-bottom: 2rem;
     animation: fadeUp 0.6s ease both;
+    text-transform: uppercase;
+    background: rgba(184,150,12,0.08);
   }
   .hero h1 {
     font-family: 'Playfair Display', serif;
@@ -119,12 +122,13 @@
   .hero h1 .gold { color: var(--gold); }
   .hero-subtitle {
     font-family: 'Noto Serif Malayalam', serif;
-    font-size: clamp(1rem, 2.5vw, 1.4rem);
-    color: rgba(255,255,255,0.6);
+    font-size: clamp(1rem, 2.2vw, 1.3rem);
+    color: rgba(255,255,255,0.55);
     margin: 1.5rem auto 3rem;
-    max-width: 600px;
-    line-height: 1.8;
+    max-width: 580px;
+    line-height: 1.9;
     animation: fadeUp 0.6s 0.2s ease both;
+    letter-spacing: 0.01em;
   }
   .hero-cta {
     display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
@@ -154,14 +158,14 @@
 
   .hero-stats {
     display: flex; justify-content: center; gap: 3rem; margin-top: 4rem;
-    padding-top: 3rem;
-    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(184,150,12,0.25);
     animation: fadeUp 0.6s 0.4s ease both;
     flex-wrap: wrap;
   }
   .stat { text-align: center; }
-  .stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--gold); }
-  .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.4); margin-top: 0.3rem; letter-spacing: 0.1em; }
+  .stat-num { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--gold-light); letter-spacing: -0.02em; }
+  .stat-label { font-size: 0.72rem; color: rgba(255,255,255,0.35); margin-top: 0.3rem; letter-spacing: 0.12em; text-transform: uppercase; }
 
   /* CATEGORIES */
   .section { padding: 5rem 2rem; }
@@ -396,9 +400,10 @@
 
   /* FOOTER */
   footer {
-    background: #060e1a;
+    background: #060d16;
     padding: 3rem 2rem 1.5rem;
     color: rgba(255,255,255,0.4);
+    border-top: 2px solid var(--gold);
   }
   .footer-inner {
     max-width: 1100px; margin: 0 auto;
@@ -457,7 +462,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">GulfNiyamam <span>GULF · LEGAL · INSURANCE</span></a>
+  <a href="#" class="nav-logo">GulfNiyamam <span>UAE · MALAYALI EXPATS · 2024</span></a>
   <ul class="nav-links">
     <li><a href="#categories">വിഭാഗങ്ങൾ</a></li>
     <li><a href="#articles">ലേഖനങ്ങൾ</a></li>
@@ -474,23 +479,23 @@
   <div class="hero-content">
     <div class="hero-badge">🇦🇪 UAE · MALAYALI EXPATS · SINCE 2024</div>
     <h1>Gulf<span class="gold">Niyamam</span></h1>
-    <p class="hero-subtitle">UAE-ലെ നിയമങ്ങളും ഇൻഷുറൻസും ജോലി അവകാശങ്ങളും — നിങ്ങളുടെ സ്വന്തം ഭാഷയിൽ</p>
+    <p class="hero-subtitle">UAE-യിലെ നിയമങ്ങളും അവകാശങ്ങളും വാർത്തകളും Vacancies-ഉം നിങ്ങൾക്കായി</p>
     <div class="hero-cta">
       <a href="#articles" class="btn-primary">ലേഖനങ്ങൾ വായിക്കുക</a>
       <a href="#categories" class="btn-outline">വിഭാഗങ്ങൾ കാണുക</a>
     </div>
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-num">20</div>
+        <div class="stat-num">25+</div>
         <div class="stat-label">ലേഖനങ്ങൾ</div>
       </div>
       <div class="stat">
-        <div class="stat-num">3</div>
+        <div class="stat-num">8</div>
         <div class="stat-label">വിഭാഗങ്ങൾ</div>
       </div>
       <div class="stat">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">മലയാളം</div>
+        <div class="stat-num">12</div>
+        <div class="stat-label">Job Vacancies</div>
       </div>
       <div class="stat">
         <div class="stat-num">Free</div>
@@ -585,7 +590,7 @@
 
     <!-- Job Vacancies -->
     <a href="jobs.html" class="cat-card" style="border:2px solid var(--gold);">
-      <span class="cat-count" style="color:#C62828; font-weight:700;">🔴 7 New Vacancies</span>
+      <span class="cat-count" style="color:#C62828; font-weight:700;">🔴 12 New Vacancies</span>
       <div class="cat-icon">💼</div>
       <div class="cat-title">Job Vacancies</div>
       <p class="cat-desc">UAE-ൽ latest job openings — Dubai, Abu Dhabi, Sharjah, Fujairah, Ajman. Daily updated vacancies for Malayalis.</p>
@@ -804,16 +809,6 @@
   </div>
 </section>
 
-<!-- NEWSLETTER -->
-<section class="newsletter" id="contact">
-  <h2>പുതിയ ലേഖനങ്ങൾ നേരിട്ട് inbox-ൽ കിട്ടണോ?</h2>
-  <p>Subscribe ചെയ്‌താൽ UAE legal updates Malayalam-ൽ ആദ്യം അറിയാം</p>
-  <div class="newsletter-form">
-    <input type="email" placeholder="നിങ്ങളുടെ email address">
-    <button>Subscribe</button>
-  </div>
-</section>
-
 <!-- AD BANNER BOTTOM -->
 <div style="padding: 2rem; background: #060e1a;">
   <div class="ad-banner" style="background: rgba(201,168,76,0.02); border-color: rgba(201,168,76,0.15);">
@@ -827,7 +822,7 @@
   <div style="max-width:1100px; margin:0 auto;">
     <div style="text-align:center; margin-bottom:2.5rem;">
       <div style="font-size:0.72rem; letter-spacing:0.25em; color:var(--gold); text-transform:uppercase; margin-bottom:0.75rem;">ALL ARTICLES · എല്ലാ ലേഖനങ്ങൾ</div>
-      <h2 style="font-family:'Noto Serif Malayalam',serif; font-size:clamp(1.4rem,3vw,2rem); color:var(--deep);">20 ലേഖനങ്ങൾ — UAE Malayali-ക്ക് വേണ്ടി</h2>
+      <h2 style="font-family:'Noto Serif Malayalam',serif; font-size:clamp(1.4rem,3vw,2rem); color:var(--deep);">25+ ലേഖനങ്ങൾ — UAE Malayali-ക്ക് വേണ്ടി</h2>
     </div>
     <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem;">
       <a href="uae-gratuity-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid var(--gold);display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:var(--gold);letter-spacing:0.1em;font-weight:700;">LABOUR LAW</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE-ൽ Job പോയാൽ Gratuity കിട്ടുമോ?</h4></a>
@@ -952,7 +947,7 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="/gulfniyamam/" class="nav-logo">GulfNiyamam</a>
-      <p>UAE-ൽ ജീവിക്കുന്ന മലയാളികൾക്ക് Insurance, Legal Rights, Labour Law information — സ്വന്തം ഭാഷയിൽ.</p>
+      <p>UAE-ൽ ജീവിക്കുന്ന മലയാളികൾക്ക് നിയമങ്ങളും അവകാശങ്ങളും വാർത്തകളും Vacancies-ഉം — സ്വന്തം ഭാഷയിൽ.</p>
     </div>
     <div>
       <h5>വിഭാഗങ്ങൾ</h5>

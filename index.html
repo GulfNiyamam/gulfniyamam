@@ -12,16 +12,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;600;700&family=Noto+Sans+Malayalam:wght@300;400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --gold: #B8960C;
-    --gold-light: #D4AF37;
-    --deep: #0D1B2A;
-    --navy: #1B2A3B;
-    --slate: #1E3A5F;
-    --cream: #F2ECD8;
-    --text: #1A0F00;
-    --muted: #6B5D4F;
-    --accent: #8B1A1A;
+:root {
+    --primary-blue: #3B4CCA;  /* Main Vibrant Royal Blue */
+    --accent-red: #E63946;    /* Small Red/Coral Highlights */
+    --light-bg: #FFFFFF;      /* Clean White Background */
+    --card-bg: #F8F9FA;       /* Very Soft Light Gray for Cards */
+    --text-dark: #1E2229;     /* Deep Slate Dark Text */
+    --text-muted: #6C757D;    /* Muted Gray Text */
+    
+    /* Mapping to existing variables for easy replacement */
+    --gold: var(--primary-blue);
+    --gold-light: #5B6BFF;
+    --deep: #2A369E;
+    --navy: #3B4CCA;
+    --slate: #4A5AE1;
+    --cream: #F4F6F9;
+    --text: var(--text-dark);
+    --muted: var(--text-muted);
+    --accent: var(--accent-red);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }

@@ -1,1034 +1,554 @@
 <!DOCTYPE html>
 <html lang="ml">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="UAE-ലെ Malayali expats-നുള്ള Insurance, Legal Rights, Labour Law information in Malayalam">
-<meta name="keywords" content="UAE insurance, UAE labour law, malayali rights, gulf niyamam, kerala expats uae">
-<title>GulfNiyamam | UAE നിയമവും ഇൻഷുറൻസും മലയാളത്തിൽ</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3616326243454722"
-     crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;600;700&family=Noto+Sans+Malayalam:wght@300;400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --gold: #B8960C;
-    --gold-light: #D4AF37;
-    --deep: #0D1B2A;
-    --navy: #1B2A3B;
-    --slate: #1E3A5F;
-    --cream: #F2ECD8;
-    --text: #1A0F00;
-    --muted: #6B5D4F;
-    --accent: #8B1A1A;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UAE-ലെ Malayali expats-നുള്ള Insurance, Legal Rights, Labour Law information in Malayalam">
+    <meta name="keywords" content="UAE insurance, UAE labour law, malayali rights, gulf niyamam, kerala expats uae">
+    <title>GulfNiyamam | UAE നിയമവും ഇൻഷുറൻസും മലയാളത്തിൽ</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3616326243454722" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;600;700&family=Noto+Sans+Malayalam:wght@300;400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #B8960C;
+            --gold-light: #D4AF37;
+            --deep: #0D1B2A;
+            --navy: #1B2A3B;
+            --slate: #1E3A5F;
+            --cream: #F2ECD8;
+            --text: #1A0F00;
+            --muted: #6B5D4F;
+            --accent: #8B1A1A;
+        }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
 
-  html { scroll-behavior: smooth; }
+        html { 
+            scroll-behavior: smooth; 
+        }
 
-  body {
-    font-family: 'Noto Sans Malayalam', sans-serif;
-    background: var(--cream);
-    color: var(--text);
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-  }
+        body {
+            font-family: 'Noto Sans Malayalam', sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
 
-  /* NAV */
-  nav {
-    position: fixed; top: 0; width: 100%; z-index: 100;
-    background: rgba(13,27,42,0.98);
-    backdrop-filter: blur(12px);
-    border-bottom: 2px solid var(--gold);
-    padding: 0 2.5rem;
-    display: flex; align-items: center; justify-content: space-between;
-    height: 64px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
-  }
-  .nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: var(--gold);
-    letter-spacing: 0.05em;
-    text-decoration: none;
-  }
-  .nav-logo span { color: #fff; font-size: 0.75rem; display: block; letter-spacing: 0.15em; font-family: 'Noto Sans Malayalam', sans-serif; font-weight: 300; margin-top: -4px; }
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
-  .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--gold); }
+        /* NAV */
+        nav {
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            z-index: 100;
+            background: rgba(13,27,42,0.98);
+            backdrop-filter: blur(12px);
+            border-bottom: 2px solid var(--gold);
+            padding: 0 2.5rem;
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+            height: 64px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+        }
 
-  /* HERO */
-  .hero {
-    min-height: 100vh;
-    background: var(--deep);
-    display: flex; align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding-top: 64px;
-  }
-  .hero-bg-photo {
-    position: absolute; inset: 0; z-index: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    object-position: center 30%;
-    opacity: 0.3;
-    filter: sepia(20%);
-  }
-  .hero::before {
-    content: '';
-    position: absolute; inset: 0; z-index: 1;
-    background: 
-      linear-gradient(to bottom, rgba(13,27,42,0.3) 0%, rgba(13,27,42,0.7) 100%),
-      radial-gradient(ellipse 70% 50% at 50% 50%, rgba(184,150,12,0.06) 0%, transparent 70%);
-  }
-  .hero-credit {
-    position: absolute; bottom: 1rem; right: 1.5rem; z-index: 5;
-    font-size: 0.62rem; color: rgba(255,255,255,0.25);
-  }
-  .hero-grid {
-    position: absolute; inset: 0; opacity: 0.03; z-index: 2;
-    background-image: linear-gradient(rgba(201,168,76,1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px);
-    background-size: 60px 60px;
-  }
-  .hero-content {
-    position: relative; z-index: 3;
-    max-width: 900px; margin: 0 auto;
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-  .hero-badge {
-    display: inline-block;
-    border: 1px solid var(--gold);
-    color: var(--gold-light);
-    font-size: 0.7rem;
-    letter-spacing: 0.25em;
-    padding: 0.4rem 1.4rem;
-    margin-bottom: 2rem;
-    animation: fadeUp 0.6s ease both;
-    text-transform: uppercase;
-    background: rgba(184,150,12,0.08);
-  }
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(3rem, 8vw, 6rem);
-    color: #fff;
-    line-height: 1;
-    margin-bottom: 0.5rem;
-    animation: fadeUp 0.6s 0.1s ease both;
-  }
-  .hero h1 .gold { color: var(--gold); }
-  .hero-subtitle {
-    font-family: 'Noto Serif Malayalam', serif;
-    font-size: clamp(1rem, 2.2vw, 1.3rem);
-    color: rgba(255,255,255,0.55);
-    margin: 1.5rem auto 3rem;
-    max-width: 580px;
-    line-height: 1.9;
-    animation: fadeUp 0.6s 0.2s ease both;
-    letter-spacing: 0.01em;
-  }
-  .hero-cta {
-    display: inline-flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
-    animation: fadeUp 0.6s 0.3s ease both;
-  }
-  .btn-primary {
-    background: var(--gold);
-    color: var(--deep);
-    padding: 0.85rem 2rem;
-    font-size: 0.9rem;
-    font-weight: 600;
-    border: none; cursor: pointer;
-    text-decoration: none;
-    transition: all 0.2s;
-    letter-spacing: 0.05em;
-  }
-  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
-  .btn-outline {
-    border: 1px solid rgba(255,255,255,0.3);
-    color: rgba(255,255,255,0.8);
-    padding: 0.85rem 2rem;
-    font-size: 0.9rem;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+            letter-spacing: 0.05em;
+            text-decoration: none;
+        }
 
-  .hero-stats {
-    display: flex; justify-content: center; gap: 3rem; margin-top: 4rem;
-    padding-top: 2.5rem;
-    border-top: 1px solid rgba(184,150,12,0.25);
-    animation: fadeUp 0.6s 0.4s ease both;
-    flex-wrap: wrap;
-  }
-  .stat { text-align: center; }
-  .stat-num { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--gold-light); letter-spacing: -0.02em; }
-  .stat-label { font-size: 0.72rem; color: rgba(255,255,255,0.35); margin-top: 0.3rem; letter-spacing: 0.12em; text-transform: uppercase; }
+        .nav-logo span { 
+            color: #fff; 
+            font-size: 0.75rem; 
+            display: block; 
+            letter-spacing: 0.15em; 
+            font-family: 'Noto Sans Malayalam', sans-serif; 
+            font-weight: 300; 
+            margin-top: -4px; 
+        }
 
-  /* CATEGORIES */
-  .section { padding: 5rem 2rem; }
-  .section-label {
-    text-align: center;
-    font-size: 0.72rem;
-    letter-spacing: 0.25em;
-    color: var(--gold);
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-  .section-title {
-    font-family: 'Noto Serif Malayalam', serif;
-    font-size: clamp(1.6rem, 4vw, 2.4rem);
-    text-align: center;
-    color: var(--deep);
-    margin-bottom: 0.75rem;
-  }
-  .section-sub {
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.95rem;
-    margin-bottom: 3.5rem;
-    max-width: 500px;
-    margin-left: auto; margin-right: auto;
-  }
+        .nav-links { 
+            display: flex; 
+            gap: 2rem; 
+            list-style: none; 
+        }
 
-  .categories { background: var(--cream); }
-  .cat-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-    max-width: 1100px; margin: 0 auto;
-  }
-  .cat-card {
-    background: #fff;
-    border: 1px solid rgba(0,0,0,0.07);
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.3s;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-  }
-  .cat-card.active {
-    background: var(--deep);
-    border-color: var(--gold);
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-  }
-  .cat-card.active .cat-title { color: var(--gold); }
-  .cat-card.active .cat-desc { color: rgba(255,255,255,0.5); }
-  .cat-card.active .cat-count { color: rgba(255,255,255,0.4); }
-  .cat-card.active::after {
-    content: '▲';
-    position: absolute; bottom: 0.75rem; right: 1rem;
-    color: var(--gold); font-size: 0.7rem;
-  }
-  .cat-articles {
-    display: none;
-    animation: slideDown 0.3s ease;
-  }
-  @keyframes slideDown {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .cat-card::before {
-    content: '';
-    position: absolute; bottom: 0; left: 0; right: 0;
-    height: 3px;
-    background: var(--gold);
-    transform: scaleX(0);
-    transition: transform 0.3s;
-  }
-  .cat-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
-  .cat-card:hover::before { transform: scaleX(1); }
-  .cat-icon { font-size: 2.5rem; margin-bottom: 1rem; }
-  .cat-title {
-    font-family: 'Noto Serif Malayalam', serif;
-    font-size: 1.2rem;
-    color: var(--deep);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-  }
-  .cat-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
-  .cat-count {
-    position: absolute; top: 1.5rem; right: 1.5rem;
-    font-size: 0.7rem; color: var(--gold);
-    letter-spacing: 0.1em;
-  }
+        .nav-links a { 
+            color: rgba(255,255,255,0.75); 
+            text-decoration: none; 
+            font-size: 0.85rem; 
+            transition: color 0.2s; 
+        }
 
-  /* FEATURED ARTICLES */
-  .articles { background: var(--navy); }
-  .articles .section-title { color: #fff; }
-  .articles .section-sub { color: rgba(255,255,255,0.4); }
-  .articles .section-label { color: var(--gold-light); }
+        .nav-links a:hover { 
+            color: var(--gold); 
+        }
 
-  .articles-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1.5rem;
-    max-width: 1100px; margin: 0 auto;
-  }
-  @media(max-width: 768px) {
-    .articles-grid { grid-template-columns: 1fr; }
-    .nav-links { display: none; }
-  }
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--deep) 0%, var(--navy) 100%);
+            display: flex; 
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding-top: 64px;
+        }
 
-  .article-featured {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    padding: 2.5rem;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  .article-featured:hover { background: rgba(255,255,255,0.07); }
-  .article-tag {
-    display: inline-block;
-    background: var(--gold);
-    color: var(--deep);
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    padding: 0.25rem 0.75rem;
-    margin-bottom: 1.2rem;
-  }
-  .article-featured h3 {
-    font-family: 'Noto Serif Malayalam', serif;
-    font-size: 1.4rem;
-    color: #fff;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-  .article-featured p { font-size: 0.88rem; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 1.5rem; }
-  .article-meta { font-size: 0.75rem; color: rgba(255,255,255,0.3); display: flex; gap: 1.5rem; }
+        .hero-bg-photo {
+            position: absolute; 
+            inset: 0; 
+            z-index: 0;
+            width: 100%; 
+            height: 100%;
+            object-fit: cover;
+            object-position: center 30%;
+            opacity: 0.15;
+            filter: sepia(20%);
+        }
 
-  .articles-side { display: flex; flex-direction: column; gap: 1rem; }
-  .article-small {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    padding: 1.5rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    flex: 1;
-  }
-  .article-small:hover { background: rgba(255,255,255,0.07); }
-  .article-small h4 {
-    font-family: 'Noto Serif Malayalam', serif;
-    font-size: 0.95rem;
-    color: #fff;
-    line-height: 1.5;
-    margin: 0.5rem 0;
-  }
-  .article-small p { font-size: 0.78rem; color: rgba(255,255,255,0.4); line-height: 1.6; }
+        .hero::before {
+            content: '';
+            position: absolute; 
+            inset: 0; 
+            z-index: 1;
+            background: 
+                linear-gradient(to bottom, rgba(13,27,42,0.3) 0%, rgba(13,27,42,0.7) 100%),
+                radial-gradient(ellipse 70% 50% at 50% 50%, rgba(184,150,12,0.06) 0%, transparent 70%);
+        }
 
-  /* WHY */
-  .why { background: var(--cream); }
-  .why-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-    max-width: 1000px; margin: 0 auto;
-  }
-  .why-item { text-align: center; padding: 1rem; }
-  .why-icon {
-    width: 60px; height: 60px;
-    background: var(--deep);
-    margin: 0 auto 1.2rem;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.5rem;
-  }
-  .why-item h4 {
-    font-family: 'Noto Serif Malayalam', serif;
-    font-size: 1rem;
-    color: var(--deep);
-    margin-bottom: 0.5rem;
-  }
-  .why-item p { font-size: 0.82rem; color: var(--muted); line-height: 1.7; }
+        .hero-credit {
+            position: absolute; 
+            bottom: 1rem; 
+            right: 1.5rem; 
+            z-index: 5;
+            font-size: 0.62rem; 
+            color: rgba(255,255,255,0.25);
+        }
 
-  /* NEWSLETTER */
-  .newsletter {
-    background: var(--deep);
-    text-align: center;
-    padding: 5rem 2rem;
-    position: relative;
-    overflow: hidden;
-  }
-  .newsletter::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(201,168,76,0.08) 0%, transparent 60%);
-  }
-  .newsletter h2 {
-    font-family: 'Noto Serif Malayalam', serif;
-    font-size: clamp(1.4rem, 4vw, 2rem);
-    color: #fff;
-    position: relative;
-    margin-bottom: 1rem;
-  }
-  .newsletter p { color: rgba(255,255,255,0.5); margin-bottom: 2rem; position: relative; font-size: 0.9rem; }
-  .newsletter-form {
-    display: flex; gap: 0; max-width: 440px; margin: 0 auto;
-    position: relative;
-  }
-  .newsletter-form input {
-    flex: 1;
-    padding: 0.85rem 1.2rem;
-    border: 1px solid rgba(255,255,255,0.15);
-    background: rgba(255,255,255,0.05);
-    color: #fff;
-    font-size: 0.88rem;
-    outline: none;
-    font-family: 'Noto Sans Malayalam', sans-serif;
-  }
-  .newsletter-form input::placeholder { color: rgba(255,255,255,0.3); }
-  .newsletter-form button {
-    background: var(--gold);
-    color: var(--deep);
-    border: none;
-    padding: 0.85rem 1.5rem;
-    font-weight: 700;
-    cursor: pointer;
-    font-size: 0.85rem;
-    transition: background 0.2s;
-    white-space: nowrap;
-  }
-  .newsletter-form button:hover { background: var(--gold-light); }
+        .hero-grid {
+            position: absolute; 
+            inset: 0; 
+            opacity: 0.03; 
+            z-index: 2;
+            background-image: linear-gradient(rgba(201,168,76,1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(201,168,76,1) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
 
-  /* FOOTER */
-  footer {
-    background: #060d16;
-    padding: 3rem 2rem 1.5rem;
-    color: rgba(255,255,255,0.4);
-    border-top: 2px solid var(--gold);
-  }
-  .footer-inner {
-    max-width: 1100px; margin: 0 auto;
-    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-    margin-bottom: 1.5rem;
-  }
-  @media(max-width: 600px) { .footer-inner { grid-template-columns: 1fr; gap: 2rem; } }
-  .footer-brand .nav-logo { font-size: 1.8rem; display: block; margin-bottom: 0.75rem; }
-  .footer-brand p { font-size: 0.82rem; line-height: 1.7; max-width: 280px; }
-  footer h5 { color: rgba(255,255,255,0.7); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1rem; }
-  footer ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
-  footer ul a { color: rgba(255,255,255,0.35); text-decoration: none; font-size: 0.82rem; transition: color 0.2s; }
-  footer ul a:hover { color: var(--gold); }
-  .footer-bottom { text-align: center; font-size: 0.75rem; max-width: 1100px; margin: 0 auto; }
+        .hero-content {
+            position: relative; 
+            z-index: 3;
+            max-width: 900px; 
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
 
-  /* AD PLACEHOLDER */
-  .ad-banner {
-    background: rgba(201,168,76,0.05);
-    border: 1px dashed rgba(201,168,76,0.3);
-    padding: 1.5rem;
-    text-align: center;
-    max-width: 728px; margin: 0 auto;
-    color: var(--gold);
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-  }
+        .hero-badge {
+            display: inline-block;
+            border: 1px solid var(--gold);
+            color: var(--gold-light);
+            font-size: 0.7rem;
+            letter-spacing: 0.25em;
+            padding: 0.4rem 1.4rem;
+            margin-bottom: 2rem;
+            animation: fadeUp 0.6s ease both;
+            text-transform: uppercase;
+            background: rgba(184,150,12,0.08);
+        }
 
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 5rem);
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            animation: fadeUp 0.6s 0.1s ease both;
+        }
 
-  .scroll-indicator {
-    position: absolute; bottom: 2rem; left: 50%;
-    transform: translateX(-50%);
-    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
-    color: rgba(255,255,255,0.3); font-size: 0.7rem; letter-spacing: 0.15em;
-    animation: fadeUp 1s 0.8s ease both;
-  }
-  .scroll-line {
-    width: 1px; height: 40px;
-    background: linear-gradient(to bottom, var(--gold), transparent);
-    animation: scrollDown 1.5s ease infinite;
-  }
-  @keyframes scrollDown {
-    0% { transform: scaleY(0); transform-origin: top; }
-    50% { transform: scaleY(1); transform-origin: top; }
-    51% { transform: scaleY(1); transform-origin: bottom; }
-    100% { transform: scaleY(0); transform-origin: bottom; }
-  }
+        .hero h1 .gold { 
+            color: var(--gold); 
+        }
 
-#themeToggle{
-background:#fff;border:none;border-radius:999px;padding:.5rem .8rem;cursor:pointer;
-font-size:1rem
-}
-body.dark-mode{
---cream:#0f172a;
---text:#f8fafc;
---deep:#0f172a;
---navy:#1e293b;
---muted:#cbd5e1;
-background:#0f172a;
-color:#f8fafc;
-}
-body.dark-mode .cat-card,
-body.dark-mode .article-small,
-body.dark-mode .article-featured{
-background:rgba(255,255,255,.05);
-}
+        .hero-subtitle {
+            font-family: 'Noto Serif Malayalam', serif;
+            font-size: clamp(1rem, 2.2vw, 1.3rem);
+            color: rgba(255,255,255,0.75);
+            margin: 1.5rem auto 3rem;
+            max-width: 580px;
+            line-height: 1.9;
+            animation: fadeUp 0.6s 0.2s ease both;
+            letter-spacing: 0.01em;
+        }
 
-</style>
+        .hero-cta {
+            display: inline-flex; 
+            gap: 1rem; 
+            flex-wrap: wrap; 
+            justify-content: center;
+            animation: fadeUp 0.6s 0.3s ease both;
+        }
+
+        .btn-primary {
+            background: var(--gold);
+            color: var(--deep);
+            padding: 0.85rem 2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: none; 
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-primary:hover { 
+            background: var(--gold-light); 
+            transform: translateY(-2px); 
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,0.3);
+            color: rgba(255,255,255,0.8);
+            padding: 0.85rem 2rem;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            background: transparent;
+        }
+
+        .btn-outline:hover { 
+            border-color: var(--gold); 
+            color: var(--gold); 
+        }
+
+        .hero-stats {
+            display: flex; 
+            justify-content: center; 
+            gap: 3rem; 
+            margin-top: 4rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid rgba(184,150,12,0.25);
+            animation: fadeUp 0.6s 0.4s ease both;
+            flex-wrap: wrap;
+        }
+
+        .stat { 
+            text-align: center; 
+        }
+
+        .stat-num { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 2.2rem; 
+            color: var(--gold-light); 
+            letter-spacing: -0.02em; 
+        }
+
+        .stat-label { 
+            font-size: 0.72rem; 
+            color: rgba(255,255,255,0.55); 
+            margin-top: 0.3rem; 
+            letter-spacing: 0.12em; 
+            text-transform: uppercase; 
+        }
+
+        /* SECTIONS */
+        .section { 
+            padding: 5rem 2rem; 
+        }
+
+        .section-label {
+            text-align: center;
+            font-size: 0.72rem;
+            letter-spacing: 0.25em;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Noto Serif Malayalam', serif;
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
+            text-align: center;
+            color: var(--deep);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 3.5rem;
+            max-width: 500px;
+            margin-left: auto; 
+            margin-right: auto;
+        }
+
+        .categories { 
+            background: var(--cream); 
+        }
+
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cat-card {
+            background: #fff;
+            border-left: 3px solid var(--gold);
+            padding: 2rem;
+            border-radius: 4px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .cat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(184,150,12,0.15);
+            border-left-color: var(--gold-light);
+        }
+
+        .cat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cat-card h3 {
+            font-family: 'Noto Serif Malayalam', serif;
+            font-size: 1.3rem;
+            color: var(--deep);
+            margin-bottom: 0.75rem;
+        }
+
+        .cat-card p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* AD SECTION */
+        .ad-section {
+            background: var(--cream);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .ad-placeholder {
+            background: #f0ebe0;
+            padding: 2rem;
+            border-radius: 4px;
+            color: var(--muted);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--deep);
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 2px solid var(--gold);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            opacity: 0.8;
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-text a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            opacity: 0.8;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav { 
+                padding: 0 1.5rem; 
+            }
+
+            .nav-links { 
+                gap: 1rem; 
+                font-size: 0.75rem; 
+            }
+
+            .hero h1 { 
+                font-size: 2.5rem; 
+            }
+
+            .hero-stats { 
+                gap: 1.5rem; 
+            }
+
+            .section { 
+                padding: 3rem 1.5rem; 
+            }
+
+            .cat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#" class="nav-logo">
+            Gulf<span>Niyamam</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#categories">വിസ</a></li>
+            <li><a href="#categories">തൊഴിൽ</a></li>
+            <li><a href="#categories">ഇൻഷ്യുറൻസ്</a></li>
+            <li><a href="#categories">നിയമം</a></li>
+        </ul>
+    </nav>
 
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">GulfNiyamam <span>UAE · MALAYALI EXPATS · 2024</span></a>
-  <ul class="nav-links">
-    <li><a href="#categories">വിഭാഗങ്ങൾ</a></li>
-    <li><a href="#articles">ലേഖനങ്ങൾ</a></li>
-    <li><a href="#about">ഞങ്ങളെ കുറിച്ച്</a></li>
-    <li><a href="#contact">ബന്ധപ്പെടുക</a></li>
-  </ul>
-  <button id="themeToggle" aria-label="Toggle theme">🌙</button>
-</nav>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-badge">UAE - MALAYALI EXPATS - 2024</div>
+            <h1>Gulf<span class="gold">Niyamam</span></h1>
+            <p class="hero-subtitle">
+                UAE-യിലെ നിയമങ്ങളും അവകാശങ്ങളും വർദ്ധിപ്പിക്കുക<br>
+                Vacancies-കൾ നിരൂപണ്ടിയായി
+            </p>
+            
+            <div class="hero-cta">
+                <button class="btn-primary">സാധാരണ പോയിന്ട്</button>
+                <button class="btn-outline">വിസ ഗൈഡ്</button>
+            </div>
 
-<!-- HERO -->
-<section class="hero">
-  <img src="hero-bg.jpg" alt="Dubai Skyline" class="hero-bg-photo">
-  <div class="hero-grid"></div>
-  <span class="hero-credit">Photo: Unsplash</span>
-  <div class="hero-content">
-    <div class="hero-badge">🇦🇪 UAE · MALAYALI EXPATS · SINCE 2024</div>
-    <h1>Gulf<span class="gold">Niyamam</span></h1>
-    <p class="hero-subtitle">UAE-യിലെ നിയമങ്ങളും അവകാശങ്ങളും വാർത്തകളും Vacancies-ഉം നിങ്ങൾക്കായി</p>
-    <div class="hero-cta">
-      <a href="#articles" class="btn-primary">ലേഖനങ്ങൾ വായിക്കുക</a>
-      <a href="#categories" class="btn-outline">വിഭാഗങ്ങൾ കാണുക</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <div class="stat-num">25+</div>
-        <div class="stat-label">ലേഖനങ്ങൾ</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">8</div>
-        <div class="stat-label">വിഭാഗങ്ങൾ</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">12</div>
-        <div class="stat-label">Job Vacancies</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">Free</div>
-        <div class="stat-label">വായന</div>
-      </div>
-    </div>
-  </div>
-  <div class="scroll-indicator">
-    <div class="scroll-line"></div>
-    SCROLL
-  </div>
-</section>
-
-<!-- AD BANNER TOP -->
-<div style="padding: 2rem; background: var(--cream);">
-  <div class="ad-banner">
-    <!-- Google AdSense Ad Unit — Approve ആയ ശേഷം ഇവിടെ code paste ചെയ്യുക -->
-    ADVERTISEMENT · 728×90
-  </div>
-</div>
-
-<!-- CATEGORIES -->
-<section class="section categories" id="categories">
-  <div class="section-label">CATEGORIES · വിഭാഗങ്ങൾ</div>
-  <h2 class="section-title">എന്ത് വിഷയം തിരയുന്നു?</h2>
-  <p class="section-sub">UAE-ൽ ജീവിക്കുന്ന മലയാളികൾക്ക് ആവശ്യമായ എല്ലാ information-ഉം</p>
-  <div class="cat-grid">
-
-    <!-- Health Insurance — 3 articles -->
-    <a href="#health" class="cat-card" onclick="toggleCategory('health'); return false;">
-      <span class="cat-count">3 ലേഖനങ്ങൾ</span>
-      <div class="cat-icon">🏥</div>
-      <div class="cat-title">Health Insurance</div>
-      <p class="cat-desc">UAE-ൽ best health insurance ഏതാണ്? Claim ചെയ്യാൻ എന്ത് ചെയ്യണം? Life insurance, travel insurance.</p>
-    </a>
-
-    <!-- Labour Law — 6 articles -->
-    <a href="#labour" class="cat-card" onclick="toggleCategory('labour'); return false;">
-      <span class="cat-count">6 ലേഖനങ്ങൾ</span>
-      <div class="cat-icon">⚖️</div>
-      <div class="cat-title">Labour Law</div>
-      <p class="cat-desc">Overtime pay, Gratuity, Salary not paid, Maternity rights, Domestic worker rights — UAE labour law.</p>
-    </a>
-
-    <!-- Car Insurance — 2 articles -->
-    <a href="#car" class="cat-card" onclick="toggleCategory('car'); return false;">
-      <span class="cat-count">2 ലേഖനങ്ങൾ</span>
-      <div class="cat-icon">🚗</div>
-      <div class="cat-title">Car Insurance</div>
-      <p class="cat-desc">UAE car insurance plans, accident procedure, claim process — complete guide.</p>
-    </a>
-
-    <!-- Tenant Rights — 1 article -->
-    <a href="#tenant" class="cat-card" onclick="toggleCategory('tenant'); return false;">
-      <span class="cat-count">1 ലേഖനം</span>
-      <div class="cat-icon">🏠</div>
-      <div class="cat-title">Tenant Rights</div>
-      <p class="cat-desc">Rent increase limits, Eviction rules, RERA complaint — UAE rental law explained.</p>
-    </a>
-
-    <!-- Visa & Travel — 3 articles -->
-    <a href="#visa" class="cat-card" onclick="toggleCategory('visa'); return false;">
-      <span class="cat-count">3 ലേഖനങ്ങൾ</span>
-      <div class="cat-icon">✈️</div>
-      <div class="cat-title">Visa & Travel Insurance</div>
-      <p class="cat-desc">Golden Visa, Visa cancel rights, Freelance visa, Travel insurance — complete guides.</p>
-    </a>
-
-    <!-- Financial Rights — 3 articles -->
-    <a href="#finance" class="cat-card" onclick="toggleCategory('finance'); return false;">
-      <span class="cat-count">3 ലേഖനങ്ങൾ</span>
-      <div class="cat-icon">💰</div>
-      <div class="cat-title">Financial Rights</div>
-      <p class="cat-desc">Bank loan rights, Best banks UAE, Emiratisation impact — financial guide.</p>
-    </a>
-
-    <!-- Traffic — 1 article -->
-    <a href="#traffic" class="cat-card" onclick="toggleCategory('traffic'); return false;">
-      <span class="cat-count">1 ലേഖനം</span>
-      <div class="cat-icon">🚦</div>
-      <div class="cat-title">Traffic Law</div>
-      <p class="cat-desc">UAE traffic fines 2026 complete list — speeding, parking, mobile phone violations.</p>
-    </a>
-
-    <!-- Education — 1 article -->
-    <a href="#education" class="cat-card" onclick="toggleCategory('education'); return false;">
-      <span class="cat-count">1 ലേഖനം</span>
-      <div class="cat-icon">🎓</div>
-      <div class="cat-title">Education</div>
-      <p class="cat-desc">UAE school admission guide for expat parents — CBSE schools, fees, process.</p>
-    </a>
-
-    <!-- Job Vacancies -->
-    <a href="jobs.html" class="cat-card" style="border:2px solid var(--gold);">
-      <span class="cat-count" style="color:#C62828; font-weight:700;">🔴 12 New Vacancies</span>
-      <div class="cat-icon">💼</div>
-      <div class="cat-title">Job Vacancies</div>
-      <p class="cat-desc">UAE-ൽ latest job openings — Dubai, Abu Dhabi, Sharjah, Fujairah, Ajman. Daily updated vacancies for Malayalis.</p>
-    </a>
-
-    <!-- Latest News -->
-    <a href="#news" class="cat-card" onclick="document.getElementById('news').scrollIntoView({behavior:'smooth'}); return false;" style="border:2px solid #1565C0;">
-      <span class="cat-count" style="color:#1565C0; font-weight:700;">📰 9 Latest Updates</span>
-      <div class="cat-icon">🗞️</div>
-      <div class="cat-title">Gulf News</div>
-      <p class="cat-desc">UAE Labour Law, Visa updates, Government announcements, Gulf Malayali community news — latest 2026.</p>
-    </a>
-
-  </div>
-
-  <!-- CATEGORY ARTICLE DROPDOWNS -->
-  <div style="max-width:1100px; margin:2rem auto 0; padding:0 1rem;">
-
-    <div id="cat-health" class="cat-articles" style="display:none; margin-bottom:1rem;">
-      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
-        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">🏥 HEALTH INSURANCE — 3 ലേഖനങ്ങൾ</div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
-          <a href="dubai-health-insurance-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">INSURANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">Dubai Health Insurance 2026 — ഏത് Plan നല്ലത്?</h4></a>
-          <a href="uae-life-insurance-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">INSURANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Life Insurance 2026 — Family Protect ചെയ്യൂ</h4></a>
-          <a href="uae-travel-insurance-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">TRAVEL</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Travel Insurance — India Trip Guide 2026</h4></a>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-num">25+</div>
+                    <div class="stat-label">നിയമ വിഷയങ്ങൾ</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">8</div>
+                    <div class="stat-label">വിസ തരങ്ങൾ</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">12</div>
+                    <div class="stat-label">വ്യവസായങ്ങൾ</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">Free</div>
+                    <div class="stat-label">നിയമ ഉപദേശം</div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        <div class="hero-credit">Project Unsplash</div>
+    </section>
 
-    <div id="cat-labour" class="cat-articles" style="display:none; margin-bottom:1rem;">
-      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
-        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">⚖️ LABOUR LAW — 6 ലേഖനങ്ങൾ</div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
-          <a href="uae-gratuity-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE-ൽ Job പോയാൽ Gratuity കിട്ടുമോ?</h4></a>
-          <a href="uae-overtime-pay-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Overtime Pay കിട്ടുന്നില്ലേ? Legal Rights</h4></a>
-          <a href="uae-salary-not-paid-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Salary കൊടുത്തില്ലെങ്കിൽ — 5 Steps</h4></a>
-          <a href="uae-labour-complaint-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">MoHRE Complaint File ചെയ്യൂ — Step by Step</h4></a>
-          <a href="uae-domestic-worker-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Housemaid / Domestic Worker Rights 2026</h4></a>
-          <a href="uae-pregnancy-maternity-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">LABOUR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Maternity Rights 2026 — Working Mothers</h4></a>
+    <!-- ADVERTISEMENT -->
+    <section class="ad-section">
+        <div class="ad-placeholder">
+            ADVERTISEMENT · 728x90
         </div>
-      </div>
-    </div>
+    </section>
 
-    <div id="cat-car" class="cat-articles" style="display:none; margin-bottom:1rem;">
-      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
-        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">🚗 CAR INSURANCE — 2 ലേഖനങ്ങൾ</div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
-          <a href="uae-car-accident-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">CAR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">Dubai Car Accident ആയാൽ — 7 Steps</h4></a>
-          <a href="uae-car-insurance-guide-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">CAR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Car Insurance 2026 — Best Plans & Claim</h4></a>
+    <!-- CATEGORIES SECTION -->
+    <section class="section categories" id="categories">
+        <div class="section-label">വിഭാഗങ്ങൾ</div>
+        <h2 class="section-title">എത്ത വിഷയം തിരയുന്നു?</h2>
+        <p class="section-sub">UAE-ൽ ജീവിക്കുന്നവർക്കുള്ള പ്രാഥമിക വിവരങ്ങൾ കണ്ടെത്തുക</p>
+
+        <div class="cat-grid">
+            <div class="cat-card">
+                <div class="cat-icon">📋</div>
+                <h3>വിസ ഗൈഡ്</h3>
+                <p>വിസ തരങ്ങൾ, അപേക്ഷാ പ്രക്രിയ, നിയമങ്ങൾ എന്നിവ ഞാൻ വിശദീകരിച്ചുതരാം</p>
+            </div>
+
+            <div class="cat-card">
+                <div class="cat-icon">💼</div>
+                <h3>തൊഴിൽ നിയമം</h3>
+                <p>വേതനം, പിഴവു, തൊഴിൽ സംരക്ഷണം എന്നതിനെപ്പറ്റി വിശദീകരണം</p>
+            </div>
+
+            <div class="cat-card">
+                <div class="cat-icon">🏥</div>
+                <h3>ആരോഗ്യ ഇൻഷ്യുറൻസ്</h3>
+                <p>സ്വാസ്ഥ്യ സേവനങ്ങൾ, ഇൻഷ്യുറൻസ് പ്ലാനുകൾ, ആരോഗ്യ കേന്ദ്രങ്ങൾ</p>
+            </div>
+
+            <div class="cat-card">
+                <div class="cat-icon">🏠</div>
+                <h3>ഭാവനം നിയമം</h3>
+                <p>വാടക കരാറുകൾ, ലീസ് നിയമങ്ങൾ, പ്രോപ്പർട്ടി അവകാശങ്ങൾ</p>
+            </div>
+
+            <div class="cat-card">
+                <div class="cat-icon">👨‍👩‍👧</div>
+                <h3>കുടുംബ വിസ</h3>
+                <p>കുടുംബ സ്പോൺസർഷിപ്പ്, കുട്ടികൾ, അപേക്ഷാ പ്രക്രിയ</p>
+            </div>
+
+            <div class="cat-card">
+                <div class="cat-icon">⚖️</div>
+                <h3>നിയമ സഹായം</h3>
+                <p>നിയമ പ്രശ്നങ്ങൾ, അധികാര വ്യതിയാനം, വിവാദ സമാധാനം</p>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <div id="cat-tenant" class="cat-articles" style="display:none; margin-bottom:1rem;">
-      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
-        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">🏠 TENANT RIGHTS — 1 ലേഖനം</div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
-          <a href="uae-rent-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">TENANT</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">Landlord Rent കൂട്ടിയോ? UAE Tenant Rights 2026</h4></a>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">© 2026 GulfNiyamam · UAE Malayali നിയമ ബ്ലോഗ്</p>
+            <p class="footer-text">📧 info@gulfniyamam.com | 📱 +971-50-XXX-XXXX | 📍 123 Business St, Dubai</p>
+            <p class="footer-text" style="font-size: 0.85rem; opacity: 0.6;">Disclaimer: General information only. Consult professionals for legal advice.</p>
         </div>
-      </div>
-    </div>
+    </footer>
 
-    <div id="cat-visa" class="cat-articles" style="display:none; margin-bottom:1rem;">
-      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
-        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">✈️ VISA & TRAVEL — 3 ലേഖനങ്ങൾ</div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
-          <a href="uae-golden-visa-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">VISA</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Golden Visa 2026 — ആർക്ക് കിട്ടും?</h4></a>
-          <a href="uae-visa-cancel-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">VISA</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Visa Cancel ആയാൽ — Grace Period & Rights</h4></a>
-          <a href="uae-freelance-visa-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">VISA</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Freelance Visa 2026 — Self Employed Guide</h4></a>
-        </div>
-      </div>
-    </div>
-
-    <div id="cat-finance" class="cat-articles" style="display:none; margin-bottom:1rem;">
-      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
-        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">💰 FINANCIAL RIGHTS — 3 ലേഖനങ്ങൾ</div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
-          <a href="uae-bank-loan-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">FINANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Bank Loan Repay ചെയ്യാൻ കഴിയുന്നില്ലേ?</h4></a>
-          <a href="uae-bank-account-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">FINANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Best Banks 2026 — Account Open Guide</h4></a>
-          <a href="uae-emiratisation-impact-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">EMPLOYMENT</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Emiratisation 2026 — Expats-ന് Impact?</h4></a>
-        </div>
-      </div>
-    </div>
-
-    <div id="cat-traffic" class="cat-articles" style="display:none; margin-bottom:1rem;">
-      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
-        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">🚦 TRAFFIC LAW — 1 ലേഖനം</div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
-          <a href="uae-traffic-fines-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">TRAFFIC</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE Traffic Fines 2026 — Complete List</h4></a>
-        </div>
-      </div>
-    </div>
-
-    <div id="cat-education" class="cat-articles" style="display:none; margin-bottom:1rem;">
-      <div style="background:var(--navy); padding:1.5rem; border-top:3px solid var(--gold);">
-        <div style="color:var(--gold); font-size:0.72rem; letter-spacing:0.15em; margin-bottom:1rem;">🎓 EDUCATION — 1 ലേഖനം</div>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;">
-          <a href="uae-child-education-rights-malayalam.html" style="background:rgba(255,255,255,0.06);padding:1rem;text-decoration:none;display:block;border-left:3px solid var(--gold);"><span style="font-size:0.65rem;color:var(--gold);">EDUCATION</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.9rem;color:#fff;margin-top:0.3rem;line-height:1.5;">UAE School Admission — Expat Parents Guide</h4></a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <script>
-  function toggleCategory(cat) {
-    var allArticles = document.querySelectorAll('.cat-articles');
-    var allCards = document.querySelectorAll('.cat-card');
-    var el = document.getElementById('cat-'+cat);
-    var isOpen = el && el.style.display === 'block';
-
-    // Close all
-    allArticles.forEach(function(a){ a.style.display='none'; });
-    allCards.forEach(function(c){ c.classList.remove('active'); });
-
-    // Open selected if it was closed
-    if(!isOpen && el) {
-      el.style.display = 'block';
-      // Mark card active
-      var cards = document.querySelectorAll('.cat-card');
-      cards.forEach(function(c){
-        if(c.getAttribute('onclick') && c.getAttribute('onclick').indexOf("'"+cat+"'") !== -1){
-          c.classList.add('active');
-        }
-      });
-      setTimeout(function(){
-        el.scrollIntoView({behavior:'smooth', block:'start'});
-      }, 150);
-    }
-  }
-  </script>
-</section>
-
-<!-- FEATURED ARTICLES -->
-<section class="section articles" id="articles">
-  <div class="section-label">LATEST · പുതിയ ലേഖനങ്ങൾ</div>
-  <h2 class="section-title">ഇന്നത്തെ വായന</h2>
-  <p class="section-sub">UAE Malayaliകൾ ഏറ്റവും കൂടുതൽ തിരയുന്ന വിഷയങ്ങൾ</p>
-  <div class="articles-grid">
-    <a href="uae-gratuity-malayalam.html" class="article-featured" style="text-decoration:none; display:block;">
-      <span class="article-tag">LABOUR LAW</span>
-      <h3>UAE-ൽ Job പോയാൽ Gratuity കിട്ടുമോ? — Complete Guide 2026</h3>
-      <p>End of Service Gratuity UAE-ൽ ഓരോ employee-നും legal right ആണ്. എത്ര വർഷം ജോലി ചെയ്‌താൽ എത്ര കിട്ടും? Calculation examples, FAQ, MoHRE complaint process — മലയാളത്തിൽ വായിക്കുക.</p>
-      <div class="article-meta">
-        <span>📅 April 2026</span>
-        <span>⏱️ 8 min read</span>
-        <span>👁️ New Article</span>
-      </div>
-      <div style="margin-top:1.2rem;">
-        <span style="color:var(--gold); font-size:0.85rem; font-weight:600;">വായിക്കുക →</span>
-      </div>
-    </a>
-    <div class="articles-side">
-      <a href="dubai-health-insurance-malayalam.html" class="article-small" style="text-decoration:none; color:inherit; display:block;">
-        <span class="article-tag" style="font-size:0.6rem;">INSURANCE</span>
-        <h4>Dubai Health Insurance 2026 — ഏത് Plan നല്ലത്?</h4>
-        <p>Daman, Bupa, Cigna, Allianz — complete comparison in Malayalam...</p>
-        <div style="margin-top:0.75rem;">
-          <span style="color:var(--gold); font-size:0.78rem; font-weight:600;">വായിക്കുക →</span>
-        </div>
-      </a>
-      <a href="uae-golden-visa-malayalam.html" class="article-small" style="text-decoration:none; color:inherit; display:block;">
-        <span class="article-tag" style="font-size:0.6rem; background: #6A1B9A;">VISA</span>
-        <h4>UAE Golden Visa 2026 — ആർക്ക് കിട്ടും? എങ്ങനെ Apply ചെയ്യാം?</h4>
-        <p>10 year residency, no sponsor, family sponsor — complete guide...</p>
-        <div style="margin-top:0.75rem;">
-          <span style="color:var(--gold); font-size:0.78rem; font-weight:600;">വായിക്കുക →</span>
-        </div>
-      </a>
-      <a href="uae-car-accident-malayalam.html" class="article-small" style="text-decoration:none; color:inherit; display:block;">
-        <span class="article-tag" style="font-size:0.6rem; background: #2E7D32;">CAR</span>
-        <h4>Dubai-ൽ Car Accident ആയാൽ — ആദ്യം ചെയ്യേണ്ട 7 കാര്യങ്ങൾ</h4>
-        <p>Police report, insurance claim, step by step guide in Malayalam...</p>
-        <div style="margin-top:0.75rem;">
-          <span style="color:var(--gold); font-size:0.78rem; font-weight:600;">വായിക്കുക →</span>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- AD BANNER MID -->
-<div style="padding: 2rem; background: var(--deep);">
-  <div class="ad-banner" style="background: rgba(201,168,76,0.03);">
-    <!-- Google AdSense Ad Unit -->
-    ADVERTISEMENT · 728×90
-  </div>
-</div>
-
-<!-- WHY US -->
-<section class="section why" id="about">
-  <div class="section-label">WHY · എന്തുകൊണ്ട് GulfNiyamam?</div>
-  <h2 class="section-title">നിങ്ങൾ ഞങ്ങളെ തിരഞ്ഞെടുക്കണം</h2>
-  <p class="section-sub">UAE-ലെ Malayali expats-നുള്ള trusted information source</p>
-  <div class="why-grid">
-    <div class="why-item">
-      <div class="why-icon">🗣️</div>
-      <h4>100% മലയാളം</h4>
-      <p>UAE നിയമങ്ങൾ നിങ്ങളുടെ സ്വന്തം ഭാഷയിൽ — easy to understand</p>
-    </div>
-    <div class="why-item">
-      <div class="why-icon">✅</div>
-      <h4>Verified Information</h4>
-      <p>UAE Government sources-ൽ നിന്ന് verified ആയ accurate information</p>
-    </div>
-    <div class="why-item">
-      <div class="why-icon">🆓</div>
-      <h4>100% Free</h4>
-      <p>ഒരു rupee-ഉം charge ഇല്ല — എല്ലാ articles-ഉം free-ആയി വായിക്കാം</p>
-    </div>
-    <div class="why-item">
-      <div class="why-icon">🔄</div>
-      <h4>Regular Updates</h4>
-      <p>UAE law changes ഉടൻ update ചെയ്യും — always current information</p>
-    </div>
-  </div>
-</section>
-
-<!-- AD BANNER BOTTOM -->
-<div style="padding: 2rem; background: #060e1a;">
-  <div class="ad-banner" style="background: rgba(201,168,76,0.02); border-color: rgba(201,168,76,0.15);">
-    <!-- Google AdSense Ad Unit -->
-    ADVERTISEMENT · 728×90
-  </div>
-</div>
-
-<!-- ALL ARTICLES SECTION -->
-<section style="background:#f0ebe0; padding:4rem 2rem;">
-  <div style="max-width:1100px; margin:0 auto;">
-    <div style="text-align:center; margin-bottom:2.5rem;">
-      <div style="font-size:0.72rem; letter-spacing:0.25em; color:var(--gold); text-transform:uppercase; margin-bottom:0.75rem;">ALL ARTICLES · എല്ലാ ലേഖനങ്ങൾ</div>
-      <h2 style="font-family:'Noto Serif Malayalam',serif; font-size:clamp(1.4rem,3vw,2rem); color:var(--deep);">25+ ലേഖനങ്ങൾ — UAE Malayali-ക്ക് വേണ്ടി</h2>
-    </div>
-    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem;">
-      <a href="uae-gratuity-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid var(--gold);display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:var(--gold);letter-spacing:0.1em;font-weight:700;">LABOUR LAW</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE-ൽ Job പോയാൽ Gratuity കിട്ടുമോ?</h4></a>
-      <a href="dubai-health-insurance-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #1565C0;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#1565C0;letter-spacing:0.1em;font-weight:700;">INSURANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">Dubai Health Insurance 2026 — ഏത് Plan നല്ലത്?</h4></a>
-      <a href="uae-golden-visa-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #6A1B9A;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#6A1B9A;letter-spacing:0.1em;font-weight:700;">VISA</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Golden Visa 2026 — ആർക്ക് കിട്ടും?</h4></a>
-      <a href="uae-overtime-pay-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid var(--gold);display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:var(--gold);letter-spacing:0.1em;font-weight:700;">LABOUR LAW</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Overtime Pay കിട്ടുന്നില്ലേ? Legal Rights 2026</h4></a>
-      <a href="uae-car-accident-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #C62828;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#C62828;letter-spacing:0.1em;font-weight:700;">CAR</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">Dubai Car Accident ആയാൽ — 7 Steps</h4></a>
-      <a href="uae-rent-rights-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #2E7D32;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#2E7D32;letter-spacing:0.1em;font-weight:700;">TENANT</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">Landlord Rent കൂട്ടിയോ? Tenant Rights 2026</h4></a>
-      <a href="uae-car-insurance-guide-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #C62828;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#C62828;letter-spacing:0.1em;font-weight:700;">CAR INSURANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Car Insurance 2026 — Best Plans & Claim</h4></a>
-      <a href="uae-salary-not-paid-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid var(--gold);display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:var(--gold);letter-spacing:0.1em;font-weight:700;">LABOUR LAW</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Salary കൊടുത്തില്ലെങ്കിൽ — 5 Steps</h4></a>
-      <a href="uae-visa-cancel-rights-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #6A1B9A;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#6A1B9A;letter-spacing:0.1em;font-weight:700;">VISA</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Visa Cancel ആയാൽ — Grace Period & Rights</h4></a>
-      <a href="uae-labour-complaint-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid var(--gold);display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:var(--gold);letter-spacing:0.1em;font-weight:700;">LABOUR LAW</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">MoHRE Complaint File ചെയ്യൂ — Step by Step</h4></a>
-      <a href="uae-travel-insurance-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #1565C0;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#1565C0;letter-spacing:0.1em;font-weight:700;">TRAVEL INSURANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Travel Insurance — India Trip Guide 2026</h4></a>
-      <a href="uae-bank-loan-rights-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid var(--gold);display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:var(--gold);letter-spacing:0.1em;font-weight:700;">FINANCIAL</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Bank Loan Repay ചെയ്യാൻ കഴിയുന്നില്ലേ?</h4></a>
-      <a href="uae-domestic-worker-rights-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid var(--gold);display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:var(--gold);letter-spacing:0.1em;font-weight:700;">LABOUR LAW</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Housemaid / Domestic Worker Rights 2026</h4></a>
-      <a href="uae-traffic-fines-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #C62828;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#C62828;letter-spacing:0.1em;font-weight:700;">TRAFFIC</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Traffic Fines 2026 — Complete List</h4></a>
-      <a href="uae-freelance-visa-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #6A1B9A;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#6A1B9A;letter-spacing:0.1em;font-weight:700;">VISA</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Freelance Visa 2026 — Self Employed Guide</h4></a>
-      <a href="uae-emiratisation-impact-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid var(--gold);display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:var(--gold);letter-spacing:0.1em;font-weight:700;">EMPLOYMENT</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Emiratisation 2026 — Expats-ന് Impact?</h4></a>
-      <a href="uae-life-insurance-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #1565C0;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#1565C0;letter-spacing:0.1em;font-weight:700;">INSURANCE</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Life Insurance 2026 — Family Protect ചെയ്യൂ</h4></a>
-      <a href="uae-bank-account-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid var(--gold);display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:var(--gold);letter-spacing:0.1em;font-weight:700;">FINANCIAL</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Best Banks 2026 — Account Open Guide</h4></a>
-      <a href="uae-child-education-rights-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #2E7D32;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#2E7D32;letter-spacing:0.1em;font-weight:700;">EDUCATION</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE School Admission — Expat Parents Guide</h4></a>
-      <a href="uae-pregnancy-maternity-rights-malayalam.html" style="background:#fff;padding:1.2rem;text-decoration:none;border-left:3px solid #C62828;display:block;transition:box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'"><span style="font-size:0.65rem;color:#C62828;letter-spacing:0.1em;font-weight:700;">LABOUR LAW</span><h4 style="font-family:'Noto Serif Malayalam',serif;font-size:0.95rem;color:var(--deep);margin-top:0.4rem;line-height:1.5;">UAE Maternity Rights 2026 — Working Mothers Guide</h4></a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-
-<!-- LATEST NEWS SECTION -->
-<section id="news" style="background:var(--deep); padding:4rem 2rem;">
-  <style>
-    .news-label { font-size:0.72rem; font-weight:700; letter-spacing:0.18em; color:var(--gold); text-transform:uppercase; text-align:center; margin-bottom:0.75rem; }
-    .news-title { font-family:'Noto Serif Malayalam',serif; font-size:clamp(1.5rem,4vw,2rem); color:#fff; text-align:center; margin-bottom:0.5rem; }
-    .news-sub { color:rgba(255,255,255,0.4); font-size:0.88rem; text-align:center; margin-bottom:2.5rem; }
-    .news-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.25rem; max-width:1100px; margin:0 auto 2rem; }
-    .news-card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:1.5rem; display:block; transition:all 0.3s; text-decoration:none !important; cursor:pointer; }
-    .news-card:hover { background:rgba(255,255,255,0.08); transform:translateY(-3px); border-color:rgba(201,168,76,0.3); }
-    .news-card h4 { color:#fff !important; }
-    .news-cat { display:inline-block; font-size:0.62rem; font-weight:700; letter-spacing:0.12em; padding:0.2rem 0.65rem; margin-bottom:0.75rem; }
-    .cat-labour { background:#1565C0; color:#fff; }
-    .cat-visa { background:#6A1B9A; color:#fff; }
-    .cat-community { background:#2E7D32; color:#fff; }
-    .cat-govt { background:#C62828; color:#fff; }
-    .cat-jobs-tag { background:#E65100; color:#fff; }
-    .news-card h4 { font-family:'Noto Serif Malayalam',serif; font-size:0.95rem; color:#fff; line-height:1.6; margin-bottom:0.5rem; }
-    .news-card p { font-size:0.78rem; color:rgba(255,255,255,0.45); line-height:1.7; margin-bottom:0.75rem; }
-    .news-meta { font-size:0.7rem; color:rgba(255,255,255,0.25); display:flex; justify-content:space-between; }
-  
-#themeToggle{
-background:#fff;border:none;border-radius:999px;padding:.5rem .8rem;cursor:pointer;
-font-size:1rem
-}
-body.dark-mode{
---cream:#0f172a;
---text:#f8fafc;
---deep:#0f172a;
---navy:#1e293b;
---muted:#cbd5e1;
-background:#0f172a;
-color:#f8fafc;
-}
-body.dark-mode .cat-card,
-body.dark-mode .article-small,
-body.dark-mode .article-featured{
-background:rgba(255,255,255,.05);
-}
-
-</style>
-
-  <div class="news-label">📰 LATEST NEWS · പുതിയ വാർത്തകൾ</div>
-  <h2 class="news-title">Gulf Malayali Updates</h2>
-  <p class="news-sub">UAE-ൽ ഉള്ള Malayalis-ന് അറിഞ്ഞിരിക്കേണ്ട latest updates — May 2026</p>
-
-  <div class="news-grid">
-
-    <a href="news-emirati-minimum-wage-2026.html" class="news-card" style="text-decoration:none;">
-      <span class="news-cat cat-labour">LABOUR LAW</span>
-      <h4>UAE-ൽ Emirati Minimum Wage 2026 — AED 6,000 Fix ചെയ്‌തു</h4>
-      <p>January 2026 മുതൽ UAE private sector-ൽ Emirati employees-ന് minimum salary AED 6,000 mandatory. WPS through payment obligatory.</p>
-      <div class="news-meta"><span>📅 May 2026</span><span>⏱️ 2 min read</span></div>
-    </a>
-
-    <a href="news-visit-visa-extension-2026.html" class="news-card" style="text-decoration:none;">
-      <span class="news-cat cat-visa">VISA UPDATE</span>
-      <h4>UAE Visit Visa Extension ഇനി Country വിടാതെ Online-ൽ!</h4>
-      <p>December 2025 മുതൽ 30/60 day visit visa ICP portal വഴി UAE-ൽ നിന്നേ extend ചെയ്യാം — exit ആവശ്യമില്ല!</p>
-      <div class="news-meta"><span>📅 May 2026</span><span>⏱️ 2 min read</span></div>
-    </a>
-
-    <a href="news-golden-visa-2026.html" class="news-card" style="text-decoration:none;">
-      <span class="news-cat cat-visa">VISA UPDATE</span>
-      <h4>UAE Golden Visa — Nurses & Content Creators-ഉം ഇനി Eligible!</h4>
-      <p>2026-ൽ Golden Visa categories expand ചെയ്‌തു — educators, nurses, content creators, athletes, researchers ഇനി apply ചെയ്യാം.</p>
-      <div class="news-meta"><span>📅 May 2026</span><span>⏱️ 2 min read</span></div>
-    </a>
-
-    <a href="news-overstay-fine-2026.html" class="news-card" style="text-decoration:none;">
-      <span class="news-cat cat-govt">GOVT UPDATE</span>
-      <h4>Visit Visa Overstay — Grace Period ഇല്ല, Day 1 മുതൽ AED 50 Fine</h4>
-      <p>2026-ൽ informal grace period officially remove ചെയ്‌തു. Visa expire ആയ ആദ്യ ദിവസം മുതൽ AED 50/day fine ഉണ്ടാകും.</p>
-      <div class="news-meta"><span>📅 May 2026</span><span>⏱️ 2 min read</span></div>
-    </a>
-
-    <a href="news-gratuity-resignation-termination-2026.html" class="news-card" style="text-decoration:none;">
-      <span class="news-cat cat-labour">LABOUR LAW</span>
-      <h4>UAE Gratuity — Resignation-ഉം Termination-ഉം ഒരേ Rate!</h4>
-      <p>New Labour Law — resign ചെയ്‌താലും terminate ആയാലും ഒരേ gratuity rate. പഴയ reduction rule abolish ചെയ്‌തു.</p>
-      <div class="news-meta"><span>📅 May 2026</span><span>⏱️ 2 min read</span></div>
-    </a>
-
-    <a href="news-emiratisation-2026-expats.html" class="news-card" style="text-decoration:none;">
-      <span class="news-cat cat-jobs-tag">JOB MARKET</span>
-      <h4>UAE Emiratisation 2026 — 50+ Employees Companies-ന് 10% Quota Mandatory</h4>
-      <p>50+ employees ഉള്ള private sector companies-ന് 10% Emirati quota mandatory. Non-compliance-ന് AED 96,000/year fine.</p>
-      <div class="news-meta"><span>📅 May 2026</span><span>⏱️ 2 min read</span></div>
-    </a>
-
-    <a href="uae-family-visa-malayalam.html" class="news-card" style="text-decoration:none;">
-      <span class="news-cat cat-community">COMMUNITY</span>
-      <h4>Family Sponsorship — AED 4,000 Salary ഉണ്ടെങ്കിൽ Family Sponsor ചെയ്യാം</h4>
-      <p>2026 update — expats-ന് AED 4,000 salary ഉണ്ടെങ്കിൽ spouse, children, parents-നെ sponsor ചെയ്യാം. Profession barrier ഇല്ല.</p>
-      <div class="news-meta"><span>📅 May 2026</span><span>⏱️ 2 min read</span></div>
-    </a>
-
-    <a href="uae-salary-not-paid-malayalam.html" class="news-card" style="text-decoration:none;">
-      <span class="news-cat cat-labour">LABOUR LAW</span>
-      <h4>UAE WPS Violation — Employer-ന് AED 1 Million വരെ Fine!</h4>
-      <p>WPS compliance violation-ൽ employer-ന് AED 1 million വരെ penalty. Salary delay ആയാൽ MoHRE-ൽ report ചെയ്യൂ.</p>
-      <div class="news-meta"><span>📅 May 2026</span><span>⏱️ 2 min read</span></div>
-    </a>
-
-    <a href="news-grievance-policy-2026.html" class="news-card" style="text-decoration:none;">
-      <span class="news-cat cat-govt">GOVT UPDATE</span>
-      <h4>50+ Employees Companies-ന് Grievance Policy Mandatory — 2026</h4>
-      <p>New Labour Law amendment — 50+ employees ഉള്ള companies-ന് official grievance & disciplinary policy mandatory ആക്കി.</p>
-      <div class="news-meta"><span>📅 May 2026</span><span>⏱️ 2 min read</span></div>
-    </a>
-
-  </div>
-</section>
-<footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <a href="/gulfniyamam/" class="nav-logo">GulfNiyamam</a>
-      <p>UAE-ൽ ജീവിക്കുന്ന മലയാളികൾക്ക് നിയമങ്ങളും അവകാശങ്ങളും വാർത്തകളും Vacancies-ഉം — സ്വന്തം ഭാഷയിൽ.</p>
-    </div>
-    <div>
-      <h5>വിഭാഗങ്ങൾ</h5>
-      <ul>
-        <li><a href="dubai-health-insurance-malayalam.html">Health Insurance</a></li>
-        <li><a href="uae-gratuity-malayalam.html">Labour Law</a></li>
-        <li><a href="uae-car-insurance-guide-malayalam.html">Car Insurance</a></li>
-        <li><a href="uae-rent-rights-malayalam.html">Tenant Rights</a></li>
-        <li><a href="uae-golden-visa-malayalam.html">Visa & Travel</a></li>
-      </ul>
-    </div>
-    <div>
-      <h5>Links</h5>
-      <ul>
-        <li><a href="about.html">ഞങ്ങളെ കുറിച്ച്</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2024 GulfNiyamam · UAE Malayali Legal & Insurance Blog · All Rights Reserved</p>
-    <p style="margin-top:0.5rem; font-size:0.7rem; opacity:0.5;">Disclaimer: This website provides general information only. For legal advice, consult a qualified UAE lawyer.</p>
-  </div>
-</footer>
-
-
-<script>
-const t=document.getElementById('themeToggle');
-if(localStorage.getItem('theme')==='dark'){
- document.body.classList.add('dark-mode');
- t.textContent='☀️';
-}
-t?.addEventListener('click',()=>{
- document.body.classList.toggle('dark-mode');
- const dark=document.body.classList.contains('dark-mode');
- localStorage.setItem('theme',dark?'dark':'light');
- t.textContent=dark?'☀️':'🌙';
-});
-</script>
-
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

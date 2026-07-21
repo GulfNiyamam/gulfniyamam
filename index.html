@@ -12,27 +12,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;600;700&family=Noto+Sans+Malayalam:wght@300;400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <style>
-:root {
-    /* Main Theme Palette from Image */
-    --purple-main: #5833EF;       /* Deep Violet / Purple */
-    --gradient-purple: #7B42F6;   /* Light Purple Gradient */
-    --gold-warm: #E29E2E;         /* Warm Gold/Orange Accent */
-    --lime-green: #B2F040;        /* Bright Lime Accent */
-    --clean-white: #FFFFFF;       /* Pure White Background */
-    --light-bg: #F9F9FC;          /* Ultra Soft Light Background */
-    --text-dark: #1E1E28;         /* Dark Gray / Black Text */
-    --text-muted: #727282;        /* Muted Text */
-
-    /* Existing variable mappings for full site compatibility */
-    --gold: var(--gold-warm);
-    --gold-light: #F2BD5B;
-    --deep: var(--purple-main);
-    --navy: #3D23AC;
-    --slate: var(--gradient-purple);
-    --cream: var(--light-bg);
-    --text: var(--text-dark);
-    --muted: var(--text-muted);
-    --accent: var(--lime-green);
+  :root {
+    --gold: #B8960C;
+    --gold-light: #D4AF37;
+    --deep: #0D1B2A;
+    --navy: #1B2A3B;
+    --slate: #1E3A5F;
+    --cream: #F2ECD8;
+    --text: #1A0F00;
+    --muted: #6B5D4F;
+    --accent: #8B1A1A;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -360,55 +349,6 @@
   }
   .why-item p { font-size: 0.82rem; color: var(--muted); line-height: 1.7; }
 
-  /* NEWSLETTER */
-  .newsletter {
-    background: var(--deep);
-    text-align: center;
-    padding: 5rem 2rem;
-    position: relative;
-    overflow: hidden;
-  }
-  .newsletter::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(201,168,76,0.08) 0%, transparent 60%);
-  }
-  .newsletter h2 {
-    font-family: 'Noto Serif Malayalam', serif;
-    font-size: clamp(1.4rem, 4vw, 2rem);
-    color: #fff;
-    position: relative;
-    margin-bottom: 1rem;
-  }
-  .newsletter p { color: rgba(255,255,255,0.5); margin-bottom: 2rem; position: relative; font-size: 0.9rem; }
-  .newsletter-form {
-    display: flex; gap: 0; max-width: 440px; margin: 0 auto;
-    position: relative;
-  }
-  .newsletter-form input {
-    flex: 1;
-    padding: 0.85rem 1.2rem;
-    border: 1px solid rgba(255,255,255,0.15);
-    background: rgba(255,255,255,0.05);
-    color: #fff;
-    font-size: 0.88rem;
-    outline: none;
-    font-family: 'Noto Sans Malayalam', sans-serif;
-  }
-  .newsletter-form input::placeholder { color: rgba(255,255,255,0.3); }
-  .newsletter-form button {
-    background: var(--gold);
-    color: var(--deep);
-    border: none;
-    padding: 0.85rem 1.5rem;
-    font-weight: 700;
-    cursor: pointer;
-    font-size: 0.85rem;
-    transition: background 0.2s;
-    white-space: nowrap;
-  }
-  .newsletter-form button:hover { background: var(--gold-light); }
-
   /* FOOTER */
   footer {
     background: #060d16;
@@ -487,21 +427,72 @@ body.dark-mode .article-featured{
 background:rgba(255,255,255,.05);
 }
 
+/* INNER PAGE TEMPLATE STYLES */
+#inner-page-view {
+  display: none;
+  min-height: 80vh;
+  padding: 100px 2rem 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.back-btn {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--deep);
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.article-container {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  line-height: 1.8;
+}
+body.dark-mode .article-container {
+  background: var(--navy);
+  color: #f8fafc;
+}
+.article-container h1 {
+  font-family: 'Noto Serif Malayalam', serif;
+  font-size: 2rem;
+  color: var(--deep);
+  margin-bottom: 1rem;
+}
+body.dark-mode .article-container h1 { color: var(--gold); }
+.article-meta-info {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+.article-body-content p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
 </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">GulfNiyamam <span>UAE · MALAYALI EXPATS · 2024</span></a>
+  <a href="index.html" class="nav-logo" onclick="showMainPage(); return false;">GulfNiyamam <span>UAE · MALAYALI EXPATS · 2024</span></a>
   <ul class="nav-links">
-    <li><a href="#categories">വിഭാഗങ്ങൾ</a></li>
-    <li><a href="#articles">ലേഖനങ്ങൾ</a></li>
-    <li><a href="#about">ഞങ്ങളെ കുറിച്ച്</a></li>
-    <li><a href="#contact">ബന്ധപ്പെടുക</a></li>
+    <li><a href="#categories" onclick="showMainPage();">വിഭാഗങ്ങൾ</a></li>
+    <li><a href="#articles" onclick="showMainPage();">ലേഖനങ്ങൾ</a></li>
+    <li><a href="#about" onclick="showMainPage();">ഞങ്ങളെ കുറിച്ച്</a></li>
+    <li><a href="#contact" onclick="showMainPage();">ബന്ധപ്പെടുക</a></li>
   </ul>
   <button id="themeToggle" aria-label="Toggle theme">🌙</button>
 </nav>
+
+<!-- MAIN INDEX CONTENT -->
+<div id="main-index-view">
 
 <!-- HERO -->
 <section class="hero">
@@ -881,8 +872,6 @@ background:rgba(255,255,255,.05);
   </div>
 </section>
 
-<!-- FOOTER -->
-
 <!-- LATEST NEWS SECTION -->
 <section id="news" style="background:var(--deep); padding:4rem 2rem;">
   <style>
@@ -902,27 +891,7 @@ background:rgba(255,255,255,.05);
     .news-card h4 { font-family:'Noto Serif Malayalam',serif; font-size:0.95rem; color:#fff; line-height:1.6; margin-bottom:0.5rem; }
     .news-card p { font-size:0.78rem; color:rgba(255,255,255,0.45); line-height:1.7; margin-bottom:0.75rem; }
     .news-meta { font-size:0.7rem; color:rgba(255,255,255,0.25); display:flex; justify-content:space-between; }
-  
-#themeToggle{
-background:#fff;border:none;border-radius:999px;padding:.5rem .8rem;cursor:pointer;
-font-size:1rem
-}
-body.dark-mode{
---cream:#0f172a;
---text:#f8fafc;
---deep:#0f172a;
---navy:#1e293b;
---muted:#cbd5e1;
-background:#0f172a;
-color:#f8fafc;
-}
-body.dark-mode .cat-card,
-body.dark-mode .article-small,
-body.dark-mode .article-featured{
-background:rgba(255,255,255,.05);
-}
-
-</style>
+  </style>
 
   <div class="news-label">📰 LATEST NEWS · പുതിയ വാർത്തകൾ</div>
   <h2 class="news-title">Gulf Malayali Updates</h2>
@@ -995,10 +964,25 @@ background:rgba(255,255,255,.05);
 
   </div>
 </section>
+
+</div> <!-- END MAIN INDEX VIEW -->
+
+<!-- INNER ARTICLE PAGE VIEW CONTAINER -->
+<div id="inner-page-view">
+  <a class="back-btn" onclick="showMainPage();">← ബാക്ക് (Back to Home)</a>
+  <div class="article-container">
+    <h1 id="inner-title">Article Title</h1>
+    <div class="article-meta-info" id="inner-meta">GulfNiyamam Guide · UAE Law Updates</div>
+    <div class="article-body-content" id="inner-content">
+      <p>ലേഖനം കാണാൻ തിരഞ്ഞെടുക്കുക...</p>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <a href="/gulfniyamam/" class="nav-logo">GulfNiyamam</a>
+      <a href="index.html" class="nav-logo" onclick="showMainPage(); return false;">GulfNiyamam</a>
       <p>UAE-ൽ ജീവിക്കുന്ന മലയാളികൾക്ക് നിയമങ്ങളും അവകാശങ്ങളും വാർത്തകളും Vacancies-ഉം — സ്വന്തം ഭാഷയിൽ.</p>
     </div>
     <div>
@@ -1026,8 +1010,8 @@ background:rgba(255,255,255,.05);
   </div>
 </footer>
 
-
 <script>
+// Theme Toggle Script
 const t=document.getElementById('themeToggle');
 if(localStorage.getItem('theme')==='dark'){
  document.body.classList.add('dark-mode');
@@ -1038,6 +1022,55 @@ t?.addEventListener('click',()=>{
  const dark=document.body.classList.contains('dark-mode');
  localStorage.setItem('theme',dark?'dark':'light');
  t.textContent=dark?'☀️':'🌙';
+});
+
+// Single Page Navigation Script to display Inner Content dynamically
+function showMainPage() {
+  document.getElementById('main-index-view').style.display = 'block';
+  document.getElementById('inner-page-view').style.display = 'none';
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function loadInnerPage(title, category, contentHtml) {
+  document.getElementById('main-index-view').style.display = 'none';
+  document.getElementById('inner-page-view').style.display = 'block';
+  document.getElementById('inner-title').innerText = title;
+  document.getElementById('inner-meta').innerText = 'Category: ' + category + ' | GulfNiyamam Official Guide 2026';
+  document.getElementById('inner-content').innerHTML = contentHtml;
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+// Intercept clicks on links pointing to inner html files
+document.addEventListener('DOMContentLoaded', function() {
+  var links = document.querySelectorAll('a[href$=".html"]');
+  links.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var href = this.getAttribute('href');
+      if(href === 'index.html' || href === '/gulfniyamam/') {
+        e.preventDefault();
+        showMainPage();
+        return;
+      }
+      
+      e.preventDefault();
+      var titleText = this.querySelector('h3, h4')?.innerText || this.innerText || 'GulfNiyamam Details';
+      var catTag = this.querySelector('.article-tag, .news-cat, span')?.innerText || 'Information';
+      
+      var defaultArticleBody = `
+        <p><strong>` + titleText + `</strong> എന്ന വിഷയത്തെക്കുറിച്ചുള്ള വിശദമായ വിവരങ്ങൾ ഇവിടെ ലഭ്യമാണ്.</p>
+        <p>UAE-ൽ ജീവിക്കുന്ന ഓരോ മലയാളി പ്രവാസിയും അറിഞ്ഞിരിക്കേണ്ട പ്രധാനപ്പെട്ട നിയമവകുപ്പുകളും മാർഗ്ഗനിർദ്ദേശങ്ങളും താഴെ വിവരിക്കുന്നു:</p>
+        <ul>
+          <li><strong>നിയമപരമായ അവകാശങ്ങൾ:</strong> UAE ഗവണ്മെന്റും MoHRE-യും അനുശാസിക്കുന്ന നിയമങ്ങൾ കൃത്യമായി പാലിക്കുക.</li>
+          <li><strong>നടപടിക്രമങ്ങൾ:</strong> ഔദ്യോഗിക പോർട്ടലുകൾ വഴിയോ (ICP/MoHRE/GDRFA) അംഗീകൃത സേവന കേന്ദ്രങ്ങൾ വഴിയോ ആപ്ലിക്കേഷനുകൾ സമർപ്പിക്കുക.</li>
+          <li><strong>ശ്രദ്ധിക്കേണ്ട കാര്യങ്ങൾ:</strong> കൃത്യസമയത്ത് രേഖകൾ പുതുക്കുക, ഫൈനുകൾ ഒഴിവാക്കാൻ നിയമങ്ങൾ പാലിക്കുക.</li>
+        </ul>
+        <br>
+        <p><em>കൂടുതൽ വിവരങ്ങൾക്കും സംശയങ്ങൾക്കും ഈ വെബ്‌സൈറ്റിലെ അതാത് കാറ്റഗറികൾ സന്ദർശിക്കുക.</em></p>
+      `;
+
+      loadInnerPage(titleText, catTag, defaultArticleBody);
+    });
+  });
 });
 </script>
 

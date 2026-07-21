@@ -13,23 +13,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;600;700&family=Noto+Sans+Malayalam:wght@300;400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 <style>
 :root {
-    --primary-blue: #3B4CCA;  /* Main Vibrant Royal Blue */
-    --accent-red: #E63946;    /* Small Red/Coral Highlights */
-    --light-bg: #FFFFFF;      /* Clean White Background */
-    --card-bg: #F8F9FA;       /* Very Soft Light Gray for Cards */
-    --text-dark: #1E2229;     /* Deep Slate Dark Text */
-    --text-muted: #6C757D;    /* Muted Gray Text */
-    
-    /* Mapping to existing variables for easy replacement */
-    --gold: var(--primary-blue);
-    --gold-light: #5B6BFF;
-    --deep: #2A369E;
-    --navy: #3B4CCA;
-    --slate: #4A5AE1;
-    --cream: #F4F6F9;
+    /* Main Theme Palette from Image */
+    --purple-main: #5833EF;       /* Deep Violet / Purple */
+    --gradient-purple: #7B42F6;   /* Light Purple Gradient */
+    --gold-warm: #E29E2E;         /* Warm Gold/Orange Accent */
+    --lime-green: #B2F040;        /* Bright Lime Accent */
+    --clean-white: #FFFFFF;       /* Pure White Background */
+    --light-bg: #F9F9FC;          /* Ultra Soft Light Background */
+    --text-dark: #1E1E28;         /* Dark Gray / Black Text */
+    --text-muted: #727282;        /* Muted Text */
+
+    /* Existing variable mappings for full site compatibility */
+    --gold: var(--gold-warm);
+    --gold-light: #F2BD5B;
+    --deep: var(--purple-main);
+    --navy: #3D23AC;
+    --slate: var(--gradient-purple);
+    --cream: var(--light-bg);
     --text: var(--text-dark);
     --muted: var(--text-muted);
-    --accent: var(--accent-red);
+    --accent: var(--lime-green);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
